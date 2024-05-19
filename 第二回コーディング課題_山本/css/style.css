@@ -19,8 +19,8 @@ h1 {
   display: flex;
 }
 li {
-  font-size: 14px;
-  padding: 0 10px;
+  font-size: 12px;
+  padding: 3px 20px;
   border-right: 1px solid #333333;
 }
 li:last-child {
