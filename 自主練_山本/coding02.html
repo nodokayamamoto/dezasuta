@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第二回コーディング自主練</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/02style.css">
+</head>
+
+<body>
+    <div class="top">
+        <h1>第二回講義</h1>
+        <p>
+            要素を横並びにする方法と、<br>
+            レスポンシブデザインへの対応を学習しました。
+        </p>
+    </div>
+    <div class="menu">
+        <ol>
+            <li><a href="#01">Flexboxについて</a></li>
+            <li><a href="#02">レスポンシブデザインへの対応</a></li>
+        </ol>
+    </div>
+    <h2 id="01">Flexboxについて</h2>
+    <p>通常、HTMLコードは上から順番に縦並びで表示される。</p>
+    <div class="sample">
+        <pre class="code"><code>
+        &lt;div class="box"&gt;&lt;/div&gt;
+        &lt;div class="box"&gt;&lt;/div&gt;
+        &lt;div class="box"&gt;&lt;/div&gt;
+    </code></pre>
+        <div class="codeex">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+    </div>
+    <p>要素を横並びに表示したいときには、css（flexbox）を活用する。</p>
+    <h3>Flexboxとは？</h3>
+    <p>要素内の配置や表示順序を変えることができるcss。</p>
+    <p>横並びにしたい要素の<b>親要素</b>に対して「display:flex」を適用させる。</p>
+    <div class="sample">
+        <pre class="code"><code>
+        &lt;div class="container"&gt;
+          &lt;div class="box"&gt;&lt;/div&gt;
+          &lt;div class="box"&gt;&lt;/div&gt;
+          &lt;div class="box"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    </code></pre>
+        <div class="flex">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+    </div>
+    <p>※デフォルトの状態は「display:block」</p>
+    <ul>
+        <li>
+            例えば&lt;li&gt;の要素を横並びにしたい場合は、&lt;ol&gt;や&lt;ul&gt;に適用させる。
+        </li>
+        <li>
+            要素を横並びにしたい場合は入れ子構造にする必要がある。
+        </li>
+    </ul>
+    <h3>要素間に間隔をとる</h3>
+    <p>「gap:〇〇px」</p>
+    <div class="gap">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <h3>横方向の配置を変える</h3>
+    <p>「justyfy-content」<br>
+        ※デフォルトの状態は「flex-start」…左寄せ</p>
+    <ul>
+        <li>flex-end…右寄せ</li>
+    </ul>
+    <div class="migiyose">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <ul>
+        <li>center…中央寄せ</li>
+    </ul>
+    <div class="center">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <ul>
+        <li>space-between…両端を固定して余白を均等割りする</li>
+    </ul>
+    <div class="between">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <h3>縦方向の配置を変える</h3>
+    <p>「align-items」<br>
+        ※デフォルトの状態は「strech」…1番大きな要素に合わせて各要素の高さを引き伸ばす</p>
+    <ul>
+        <li>flex-start…上揃え</li>
+    </ul>
+    <div class="ue">
+        <div class="box1"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <ul>
+        <li>flex-end…下揃え</li>
+    </ul>
+    <div class="shita">
+        <div class="box1"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <ul>
+        <li>center…中央揃え</li>
+    </ul>
+    <div class="chuou">
+        <div class="box1"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <p>※レスポンシブ等で縦並び配置に切り替わると、縦横の指定が逆になるので注意！</p>
+    <h3>横並び要素を改行させる</h3>
+    <p>通常、「deisplay:flex」の中身は改行されない。</p>
+    <div class="kaigyou">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <p>親要素の幅に収まらない場合、余白が詰まり子要素の幅が縮まって表示される。<br>
+        要素の幅よりも画面幅が小さくなると、横スクロールが出現する。<br>
+        ※デザイン崩れの元となる！</p>
+    <p>改行させたい場合は「flex-wrap:wrap;」を指定する。</p>
+    <div class="wrap">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <p>親要素の幅を超える子要素から自動的に改行される。</p>
+    <h3>css記述時の注意</h3>
+    <p>flex要素に上記のようなcssをかける場合、必ず<b>「display:flex;」より下に記述する</b>。</p>
+    <p>参考：<a href="https://www.webcreatorbox.com/tech/css-flexbox-cheat-sheet" target="_blank"
+            rel="noopener noreferrer">Flexboxチートシート</a></p>
+    <h2 id="02">レスポンシブデザインへの対応</h2>
+    <h3>レスポンシブデザインとは</h3>
+    <p>デバイスの画面サイズに応じて表示方法を切り替えることのできるデザインのこと。<br>
+        デバイスごとにサイトやページを作る必要がなく、SEO対策や運用管理において有用。</p>
+    <h3>レスポンシブデザイン作成時の注意</h3>
+    <ul>
+        <li>HTMLファイルの&lt;head&gt;内にmeta vieportタグを記述する。</li>
+    </ul>
+    <div class="sucription">
+        <p>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+    </div>
+    <ul>
+        <li>コンテンツ幅を「max-width:〇〇px」で指定する。</li>
+        <li>要素幅を「〇〇%」で指定する。</li>
+        <li>デバイスごとにcssを上書きする。⇒<b>メディアクエリ</b></li>
+    </ul>
+    <div class="sucription">
+        <p>@media screen and (max-width:〇〇px){ }</p>
+    </div>
+    <ul class="sublist">
+        <li>メディアクエリで指定する幅は、デザイン崩れのタイミングやデバイスのシェア率を参考に指定する。</li>
+        <li>表示を切り替えるポイント（指定する画面幅）を<b>ブレイクポイント</b>という。</li>
+        <li>768px以上…PC、767px以下…タブレット、スマートフォン表示にすることが多い。</li>
+    </ul>
+    <p class="link"><a href="index.html">&lt;&lt; home</a></p>
+
+</body>
+
+</html>
