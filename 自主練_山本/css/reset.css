@@ -33,7 +33,7 @@ img {
 }
 
 body {
-  width: 980px;
+  max-width: 980px;
   margin: 100px auto;
 }
 h1 {
@@ -64,12 +64,12 @@ span {
 }
 .top {
   text-align: center;
-  width: 500px;
+  width: 60%;
   margin: 0 auto;
 }
 .menu {
   border: 2px solid #2f5057;
-  width: 300px;
+  width: 40%;
   padding: 20px;
   margin: 40px auto;
 }
@@ -115,4 +115,43 @@ a:active {
 code {
   font-family: "Noto Sans JP", san-serif;
   font-size: 15px;
+}
+@media screen and (max-width: 767px) {
+  html,
+  body,
+  h1,
+  h2,
+  h3,
+  p,
+  dl,
+  dt,
+  dd,
+  ul,
+  li,
+  pre {
+    font-family: "Noto Sans JP", san-serif;
+    font-size: 13px;
+    line-height: 180%;
+  }
+  body {
+    max-width: 747px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  .top {
+    width: 80%;
+  }
+  .menu {
+    width: 80%;
+  }
+  h1 {
+    font-size: 18px;
+  }
+  h2 {
+    font-size: 15px;
+  }
+  code {
+    font-family: "Noto Sans JP", san-serif;
+    font-size: 13px;
+  }
 }
