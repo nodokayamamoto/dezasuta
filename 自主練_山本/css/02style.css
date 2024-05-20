@@ -123,8 +123,8 @@ h3 {
   text-align: center;
   background-color: #f3f2f0;
 }
-.sublist {
-  margin-left: 80px;
+.sub {
+  margin-left: 40px;
   list-style-type: circle;
 }
 .link {
@@ -157,8 +157,8 @@ h3 {
   .sucription {
     text-align: left;
   }
-  .sublist {
-    margin-left: 40px;
+  .sub {
+    margin-left: 20px;
     list-style-type: circle;
   }
 }
