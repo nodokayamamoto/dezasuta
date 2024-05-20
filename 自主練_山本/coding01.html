@@ -31,56 +31,62 @@
             <li><a href="#11">&lt;pre&gt;&lt;code&gt;タグとは？</a></li>
         </ol>
     </div>
-    <h2 id="01">&lt;p&gt;タグとは？</h2>
-    <p><span>P</span>aragragh＝段落</p>
-    <ul>
-        <li>&lt;p&gt;~&lt;/p&gt;で囲まれた範囲がその段落として表示される。</li>
-    </ul>
-    <ul class="komelist">
-        <li>
-            段落＝文章のまとまりを区切ったもの
-        </li>
-        <li>
-            pタグはブロックレベル要素
-        </li>
-    </ul>
-    <h2 id="02">&lt;ul&gt;&lt;li&gt;タグとは？</h2>
-    <p><span>U</span>nordered <span>L</span>ist＝順序のない箇条書き</p>
-    <ul>
-        <li>「・～」のリストをつくることができるタグ</li>
-        <li>箇条書きのリストを1つにまとめる箱をイメージするとわかりやすい。※&lt;ol&gt;も同様</li>
-        <li>リストの内容は各項目ごとに&lt;li&gt;～&lt;/li&gt;で囲む。</li>
-    </ul>
-    <ul class="komelist">
-        <li>
-            &lt;li&gt;は&lt;ul&gt;もしくは&lt;ol&gt;タグ以外で直接囲むことはできない。
-        </li>
-        <li>
-            &lt;ul&gt;&lt;ol&gt;タグの直下は必ず&lt;li&gt;でないといけない。 → 項目にリンクを貼りたい場合は&lt;li&gt;の下に&lt;a&gt;で指定する。
-        </li>
-    </ul>
-    <h2 id="03">&lt;dl&gt;&lt;dt&gt;&lt;dd&gt;タグとは？</h2>
-    <p>dl…<span>D</span>efinition <span>L</span>ist＝説明リスト<br>
-        dt…<span>D</span>efinition <span>T</span>erm＝説明する言葉<br>
-        dd…<span>D</span>efinition <span>D</span>ata＝定義文or説明文<br></p>
-    <p>&lt;dl&gt;<br>
-        　&lt;dt&gt;説明したいこと&lt;/dt&gt;<br>
-        　&lt;dd&gt;それに関する説明&lt;/dd&gt;<br>
-        &lt;/dl&gt;</p>
-    <ul>
-        <li>&lt;dl&gt;は&lt;ul&gt;,&lt;ol&gt;同様、リストをまとめる箱のイメージ</li>
-        <li>&lt;dt&gt;の内容を&lt;dd&gt;で説明しているという関係になっていればOK</li>
-        <li>&lt;dl&gt;の中に&lt;dt&gt;と&lt;dd&gt;は複数存在してもOK</li>
-        <li>&lt;dt&gt;に対して&lt;dd&gt;が複数存在してもOK</li>
-        <li>複数の&lt;dl&gt;を1つの&lt;dd&gt;で定義することもOK</li>
-    </ul>
-    <ul class="komelist">
-        <li>
-            定義リストとして辞書的な使い方をする場合は、&lt;dt&gt;&lt;dfn&gt;～&lt;/dfn&gt;&lt;dt&gt;で定義リストであることを強調できる。<br>
-        </li>
-    </ul>
-    <h3>使用例①</h3>
-    <pre class="code"><code>
+    <section>
+        <h2 id="01">&lt;p&gt;タグとは？</h2>
+        <p><span>P</span>aragragh＝段落</p>
+        <ul>
+            <li>&lt;p&gt;~&lt;/p&gt;で囲まれた範囲がその段落として表示される。</li>
+        </ul>
+        <ul class="komelist">
+            <li>
+                段落＝文章のまとまりを区切ったもの
+            </li>
+            <li>
+                pタグはブロックレベル要素
+            </li>
+        </ul>
+    </section>
+    <section>
+        <h2 id="02">&lt;ul&gt;&lt;li&gt;タグとは？</h2>
+        <p><span>U</span>nordered <span>L</span>ist＝順序のない箇条書き</p>
+        <ul>
+            <li>「・～」のリストをつくることができるタグ</li>
+            <li>箇条書きのリストを1つにまとめる箱をイメージするとわかりやすい。※&lt;ol&gt;も同様</li>
+            <li>リストの内容は各項目ごとに&lt;li&gt;～&lt;/li&gt;で囲む。</li>
+        </ul>
+        <ul class="komelist">
+            <li>
+                &lt;li&gt;は&lt;ul&gt;もしくは&lt;ol&gt;タグ以外で直接囲むことはできない。
+            </li>
+            <li>
+                &lt;ul&gt;&lt;ol&gt;タグの直下は必ず&lt;li&gt;でないといけない。 → 項目にリンクを貼りたい場合は&lt;li&gt;の下に&lt;a&gt;で指定する。
+            </li>
+        </ul>
+    </section>
+    <section>
+        <h2 id="03">&lt;dl&gt;&lt;dt&gt;&lt;dd&gt;タグとは？</h2>
+        <p>dl…<span>D</span>efinition <span>L</span>ist＝説明リスト<br>
+            dt…<span>D</span>efinition <span>T</span>erm＝説明する言葉<br>
+            dd…<span>D</span>efinition <span>D</span>ata＝定義文or説明文<br></p>
+        <p>&lt;dl&gt;<br>
+            　&lt;dt&gt;説明したいこと&lt;/dt&gt;<br>
+            　&lt;dd&gt;それに関する説明&lt;/dd&gt;<br>
+            &lt;/dl&gt;</p>
+        <ul>
+            <li>&lt;dl&gt;は&lt;ul&gt;,&lt;ol&gt;同様、リストをまとめる箱のイメージ</li>
+            <li>&lt;dt&gt;の内容を&lt;dd&gt;で説明しているという関係になっていればOK</li>
+            <li>&lt;dl&gt;の中に&lt;dt&gt;と&lt;dd&gt;は複数存在してもOK</li>
+            <li>&lt;dt&gt;に対して&lt;dd&gt;が複数存在してもOK</li>
+            <li>複数の&lt;dl&gt;を1つの&lt;dd&gt;で定義することもOK</li>
+        </ul>
+        <ul class="komelist">
+            <li>
+                定義リストとして辞書的な使い方をする場合は、&lt;dt&gt;&lt;dfn&gt;～&lt;/dfn&gt;&lt;dt&gt;で定義リストであることを強調できる。<br>
+            </li>
+        </ul>
+        <section>
+            <h3>使用例①</h3>
+            <pre class="code preview"><code>
             &lt;p&gt;サービスの説明&lt;/p&gt;
             &lt;dl&gt;
               &lt;dt&gt;ホームページ制作&lt;/dt&gt;
@@ -89,34 +95,38 @@
               &lt;dd&gt;ホームページの集客をアドバイスします&lt;/dd&gt;
             &lt;/dl&gt;
         </code></pre>
-    <p>コード反映すると以下のようになる。</p>
-    <div class="codeex">
-        <p>サービスの説明</p>
-        <dl>
-            <dt>ホームページ制作</dt>
-            <dd>オリジナルホームページを制作します</dd>
-            <dt>Webコンサルティング</dt>
-            <dd>ホームページの集客をアドバイスします</dd>
-        </dl>
-    </div>
-    <h3>使用例②</h3>
-    <pre class="code"><code>
+            <p>コード反映すると以下のようになる。</p>
+            <div class="codeex preview">
+                <p>サービスの説明</p>
+                <dl>
+                    <dt>ホームページ制作</dt>
+                    <dd>オリジナルホームページを制作します</dd>
+                    <dt>Webコンサルティング</dt>
+                    <dd>ホームページの集客をアドバイスします</dd>
+                </dl>
+            </div>
+        </section>
+        <section>
+            <h3>使用例②</h3>
+            <pre class="code preview"><code>
             &lt;p&gt;サービスに関するFAQ&lt;/p&gt;
             &lt;dl&gt;
               &lt;dt&gt;ホームページ制作にはどのようなサービスが含まれますか？&lt;/dt&gt;
               &lt;dd&gt;コンテンツ企画・文章作成、オリジナルWEBデザインの制作～コーディングまですべて含まれます。&lt;/dd&gt;
             &lt;/dl&gt;
         </code></pre>
-    <p>コード反映すると以下のようになる。</p>
-    <div class="codeex">
-        <p>サービスに関するFAQ</p>
-        <dl>
-            <dt>ホームページ制作にはどのようなサービスが含まれますか？</dt>
-            <dd>コンテンツ企画・文章作成、オリジナルWEBデザインの制作～コーディングまですべて含まれます。</dd>
-        </dl>
-    </div>
-    <h3>使用例③</h3>
-    <pre class="code"><code>
+            <p>コード反映すると以下のようになる。</p>
+            <div class="codeex preview">
+                <p>サービスに関するFAQ</p>
+                <dl>
+                    <dt>ホームページ制作にはどのようなサービスが含まれますか？</dt>
+                    <dd>コンテンツ企画・文章作成、オリジナルWEBデザインの制作～コーディングまですべて含まれます。</dd>
+                </dl>
+            </div>
+        </section>
+        <section>
+            <h3>使用例③</h3>
+            <pre class="code preview"><code>
             &lt;p&gt;メタデータ&lt;/p&gt;
             &lt;dl&gt;
               &lt;dt&gt;名前&lt;/dt&gt;
@@ -125,38 +135,41 @@
               &lt;dd&gt;シンガーソングライター&lt;/dd&gt;
             &lt;/dl&gt;
         </code></pre>
-    <p>コード反映すると以下のようになる。</p>
-    <div class="codeex">
-        <p>メタデータ</p>
-        <dl>
-            <dt>名前</dt>
-            <dd>椎名林檎</dd>
-            <dt>職業</dt>
-            <dd>シンガーソングライター</dd>
-        </dl>
-    </div>
-    <ul class="komelist">
-        <li>
-            単純な項目リストの場合は&lt;ul&gt;・&lt;ol&gt;、「リスト」+「項目ごとの説明」を書く場合は&lt;dl&gt;
-        </li>
-        <li>
-            項目や説明が複数カテゴリになる（表のような見た目をつくる）場合は&lt;table&gt;
-        </li>
-    </ul>
-    <h2 id="04">&lt;div&gt;タグとは？</h2>
-    <p><span>D</span>ivided＝分かれた、分けられた、分配された</p>
-    <ul>
-        <li>&lt;div&gt;そのものは特に意味を持たない</li>
-        <li>囲んだ要素をひとくくりにするためのタグ</li>
-    </ul>
-    <p>
-        ※横並びに表示したり、終わりに改行を入れたくない場合は、cssで「display:inline-block」を適用させる。
-    </p>
-    <p>
-        見出しとそれに関する文章をまとめるなら&lt;section&gt;タグを使用する！<br>
-        ex）見出しとその内容を囲む
-    </p>
-    <pre class="code"><code>
+            <p>コード反映すると以下のようになる。</p>
+            <div class="codeex preview">
+                <p>メタデータ</p>
+                <dl>
+                    <dt>名前</dt>
+                    <dd>椎名林檎</dd>
+                    <dt>職業</dt>
+                    <dd>シンガーソングライター</dd>
+                </dl>
+            </div>
+            <ul class="komelist">
+                <li>
+                    単純な項目リストの場合は&lt;ul&gt;・&lt;ol&gt;、「リスト」+「項目ごとの説明」を書く場合は&lt;dl&gt;
+                </li>
+                <li>
+                    項目や説明が複数カテゴリになる（表のような見た目をつくる）場合は&lt;table&gt;
+                </li>
+            </ul>
+        </section>
+    </section>
+    <section>
+        <h2 id="04">&lt;div&gt;タグとは？</h2>
+        <p><span>D</span>ivided＝分かれた、分けられた、分配された</p>
+        <ul>
+            <li>&lt;div&gt;そのものは特に意味を持たない</li>
+            <li>囲んだ要素をひとくくりにするためのタグ</li>
+        </ul>
+        <p>
+            ※横並びに表示したり、終わりに改行を入れたくない場合は、cssで「display:inline-block」を適用させる。
+        </p>
+        <p>
+            見出しとそれに関する文章をまとめるなら&lt;section&gt;タグを使用する！<br>
+            ex）見出しとその内容を囲む
+        </p>
+        <pre class="code preview"><code>
         &lt;section&gt;
           &lt;h2&gt;ブログタイトル1&lt;/h2&gt;
           &lt;p&gt;ブログタイトル1の内容&lt;/p&gt;
@@ -166,64 +179,69 @@
           &lt;p&gt;ブログタイトル2の内容&lt;/p&gt;
         &lt;/section&gt;
         </code></pre>
-    <p>コード反映すると以下のようになる。</p>
-    <div class="codeex">
+        <p>コード反映すると以下のようになる。</p>
+        <div class="codeex preview">
+            <section>
+                <h2 class="sample">ブログタイトル1</h2>
+                <p>ブログタイトル１の内容</p>
+            </section>
+            <section>
+                <h2 class="sample">ブログタイトル2</h2>
+                <p>ブログタイトル2の内容</p>
+            </section>
+        </div>
+        <ul class="komelist">
+            <li>
+                &lt;section&gt;タグには必ず&lt;h&gt;タグを入れ子にする。
+            </li>
+            <li>
+                &lt;section&gt;タグにcssを適用させたい場合は、&lt;div&gt;タグを入れ子にしてcssを適用させる。
+            </li>
+            <li>
+                単純にひとくくりにまとめたいだけ（デザイン的な目的のみ）なら&lt;div&gt;タグでOK
+            </li>
+        </ul>
+    </section>
+    <section>
+        <h2 id="05">&lt;span&gt;タグとは？</h2>
+        <ul>
+            <li>行の中の一部分のまとまり（インライン要素）をグルーピングするためのタグ。</li>
+            <li>文章の中で一部の文字だけ色をつけたり太さや大きさを変えたい（装飾をつけたい）ときに使用する。</li>
+            <li>&lt;div&gt;タグ同様、単独では意味を持たない。</li>
+        </ul>
+        <ul class="komelist">
+            <li>&lt;span&gt;タグは囲んだ要素の前後に改行や空白は入らない。widthやheightも指定できない。（インライン要素）</li>
+            <li>&lt;div&gt;タグは仕切りの役割を持つため、囲んだ要素の後に改行が入る。（ブロックレベル要素）</li>
+            <li>&lt;p&gt;タグもブロックレベル要素、文末に改行＋１行分の空白が入る。</li>
+        </ul>
+    </section>
+    <section>
+        <h2 id="06">&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;th&gt;タグとは？</h2>
+        <p>
+            Table＝表<br>
+            tr（<span>T</span>able <span>R</span>ow）＝表の行<br>
+            th（<span>T</span>able <span>H</span>eader）＝表の見出し・カテゴリー・項目名<br>
+            td（<span>T</span>able <span>D</span>ata）＝表のデータ・情報
+        </p>
+        <p>
+            &lt;thead&gt;＝一番上の行<br>
+            &lt;tbody&gt;＝一番上と一番下の間にある行（複数存在OK）<br>
+            &lt;thead&gt;＝一番下の行
+        </p>
+        <ul class="komelist">
+            <li>
+                枠線はデフォルトでは二重線になるため、一重線にするにはcssで「border-collapse:collapse;」を適用する。
+            </li>
+            <li>
+                th要素はデフォルトで太字、中央寄せになっている。
+            </li>
+            <li>
+                tr要素はデフォルトでは左寄せ。中央寄せにするにはcssで「text-align: center;」を適用する。
+            </li>
+        </ul>
         <section>
-            <h2 class="sample">ブログタイトル1</h2>
-            <p>ブログタイトル１の内容</p>
-        </section>
-        <section>
-            <h2 class="sample">ブログタイトル2</h2>
-            <p>ブログタイトル2の内容</p>
-        </section>
-    </div>
-    <ul class="komelist">
-        <li>
-            &lt;section&gt;タグには必ず&lt;h&gt;タグを入れ子にする。
-        </li>
-        <li>
-            &lt;section&gt;タグにcssを適用させたい場合は、&lt;div&gt;タグを入れ子にしてcssを適用させる。
-        </li>
-        <li>
-            単純にひとくくりにまとめたいだけ（デザイン的な目的のみ）なら&lt;div&gt;タグでOK
-        </li>
-    </ul>
-    <h2 id="05">&lt;span&gt;タグとは？</h2>
-    <ul>
-        <li>行の中の一部分のまとまり（インライン要素）をグルーピングするためのタグ。</li>
-        <li>文章の中で一部の文字だけ色をつけたり太さや大きさを変えたい（装飾をつけたい）ときに使用する。</li>
-        <li>&lt;div&gt;タグ同様、単独では意味を持たない。</li>
-    </ul>
-    <ul class="komelist">
-        <li>&lt;span&gt;タグは囲んだ要素の前後に改行や空白は入らない。widthやheightも指定できない。（インライン要素）</li>
-        <li>&lt;div&gt;タグは仕切りの役割を持つため、囲んだ要素の後に改行が入る。（ブロックレベル要素）</li>
-        <li>&lt;p&gt;タグもブロックレベル要素、文末に改行＋１行分の空白が入る。</li>
-    </ul>
-    <h2 id="06">&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;th&gt;タグとは？</h2>
-    <p>
-        Table＝表<br>
-        tr（<span>T</span>able <span>R</span>ow）＝表の行<br>
-        th（<span>T</span>able <span>H</span>eader）＝表の見出し・カテゴリー・項目名<br>
-        td（<span>T</span>able <span>D</span>ata）＝表のデータ・情報
-    </p>
-    <p>
-        &lt;thead&gt;＝一番上の行<br>
-        &lt;tbody&gt;＝一番上と一番下の間にある行（複数存在OK）<br>
-        &lt;thead&gt;＝一番下の行
-    </p>
-    <ul class="komelist">
-        <li>
-            枠線はデフォルトでは二重線になるため、一重線にするにはcssで「border-collapse:collapse;」を適用する。
-        </li>
-        <li>
-            th要素はデフォルトで太字、中央寄せになっている。
-        </li>
-        <li>
-            tr要素はデフォルトでは左寄せ。中央寄せにするにはcssで「text-align: center;」を適用する。
-        </li>
-    </ul>
-    <h3>使用例</h3>
-    <pre class="code"><code>
+            <h3>使用例</h3>
+            <pre class="code preview"><code>
             &lt;table&gt;
               &lt;tr&gt;
                 &lt;th&gt;名前&lt;/th&gt;
@@ -242,28 +260,28 @@
               &lt;/tr&gt;
             &lt;/table&gt;
         </code></pre>
-    <p>コード反映すると以下のようになる。</p>
-    <div class="codeex">
-        <table>
-            <tr>
-                <th>名前</th>
-                <th>性別</th>
-                <th>年齢</th>
-            </tr>
-            <tr>
-                <td>山田</td>
-                <td>女</td>
-                <td>19</td>
-            </tr>
-            <tr>
-                <td>木村</td>
-                <td>男</td>
-                <td>20</td>
-            </tr>
-        </table>
-    </div>
-    <p>※縦のセルを結合する場合は「rowspan="結合するセルの数"」</p>
-    <pre class="code"><code>
+            <p>コード反映すると以下のようになる。</p>
+            <div class="codeex preview">
+                <table>
+                    <tr>
+                        <th>名前</th>
+                        <th>性別</th>
+                        <th>年齢</th>
+                    </tr>
+                    <tr>
+                        <td>山田</td>
+                        <td>女</td>
+                        <td>19</td>
+                    </tr>
+                    <tr>
+                        <td>木村</td>
+                        <td>男</td>
+                        <td>20</td>
+                    </tr>
+                </table>
+            </div>
+            <p>※縦のセルを結合する場合は「rowspan="結合するセルの数"」</p>
+            <pre class="code preview"><code>
             &lt;table&gt;
               &lt;tr&gt;
                 &lt;th&gt;名前&lt;/th&gt;
@@ -282,27 +300,27 @@
             &lt;/table&gt;
         </code></pre>
 
-    <p>コード反映すると以下のようになる。</p>
-    <div class="codeex">
-        <table>
-            <tr>
-                <th>名前</th>
-                <th>性別</th>
-                <th>年齢</th>
-            </tr>
-            <tr>
-                <td>山田</td>
-                <td>女</td>
-                <td rowspan="2">19</td>
-            </tr>
-            <tr>
-                <td>木村</td>
-                <td>男</td>
-            </tr>
-        </table>
-    </div>
-    <p>※横のセルを結合する場合は「colspan="結合するセルの数"」</p>
-    <pre class="code"><code>
+            <p>コード反映すると以下のようになる。</p>
+            <div class="codeex preview">
+                <table>
+                    <tr>
+                        <th>名前</th>
+                        <th>性別</th>
+                        <th>年齢</th>
+                    </tr>
+                    <tr>
+                        <td>山田</td>
+                        <td>女</td>
+                        <td rowspan="2">19</td>
+                    </tr>
+                    <tr>
+                        <td>木村</td>
+                        <td>男</td>
+                    </tr>
+                </table>
+            </div>
+            <p>※横のセルを結合する場合は「colspan="結合するセルの数"」</p>
+            <pre class="code preview"><code>
             &lt;table&gt;
               &lt;tr align="center"&gt;
                 &lt;th&gt;名前&lt;/th&gt;
@@ -320,129 +338,141 @@
               &lt;/tr&gt;
             &lt;/table&gt;
         </code></pre>
-    <p>コード反映すると以下のようになる。</p>
-    <div class="codeex">
-        <table>
-            <tr>
-                <th>名前</th>
-                <th>性別</th>
-                <th>年齢</th>
-            </tr>
-            <tr>
-                <td>山田</td>
-                <td>女</td>
-                <td>19</td>
-            </tr>
-            <tr>
-                <td>木村</td>
-                <td colspan="2">不明</td>
-            </tr>
-        </table>
-    </div>
-    <h2 id="07">&lt;h1&gt;タグとは？</h2>
-    <p><span>H</span>eading＝見出し　※h1~h6まで存在、数字が小さいほど重要度が高い</p>
-    <ul>
-        <li>
-            &lt;h1&gt;タグは最上位の見出しを示す、&lt;title&gt;タグの次に重要なタグ
-        </li>
-        <li>
-            ページ内容を簡潔に表すテキストを記載するためのタグ
-        </li>
-        <li>
-            ページ内に1つしか存在してはいけない！
-        </li>
-    </ul>
-    <ul class="komelist">
-        <li>
-            hタグはブロックレベル要素。spanやimagなどインライン要素を含むこともOK
-        </li>
-    </ul>
-    <ul class="komelist">
-        <li>
-            &lt;h1&gt;タグの役割はクローラーにページの内容や構造を伝えること！デザイン変更の用途で使用するのはNG
-        </li>
-        <li>
-            &lt;h1&gt;タグにはSEO対策のキーワードを含め、簡潔に記述する（30～50文字）
-        </li>
-        <li>
-            &lt;h1&gt;に画像を使用してもOK、その場合SEO対策として画像内容を認識させるため&lt;img src="~.jpg" alt="画像の説明"&gt;
-        </li>
-    </ul>
-    <h2 id="08">&lt;h2&gt;タグとは？</h2>
-    <p>&lt;h1&gt;大見出し…ページ内容やタイトル<br>
-        &lt;h2&gt;中見出し…ページ内の章の見出し<br>
-        &lt;h3&gt;小見出し…各章のポイントとなる見出し<br>
-        &lt;h4&gt;～&lt;h6&gt;…h3の補足など</p>
-    <ul class="komelist">
-        <li>
-            hタグにidで名前をつけて、ページ内リンクを作ることもできる。そのため、idは同じページ内に複数存在NG！<br>
-            &lt;o&gt;&lt;a href="~~"&gt;見出し&lt;/a&gt;&lt;/p&gt; → &lt;h2 id="~~"&gt;見出し&lt;/h2&gt;
-        </li>
-    </ul>
-    <h2 id="09">&lt;ol&gt;&lt;li&gt;タグとは？</h2>
-    <p><span>O</span>rdered <span>L</span>ist＝順序のある箇条書き</p>
-    <ol>
-        <li>項目1</li>
-        <li>項目2</li>
-        <li>項目3</li>
-    </ol>
-    <p>※デフォルトではリストは昇順（1，2，3…）、降順（3，2，1）にしたい場合は&lt;ol reversed&gt;</p>
-    <ol reversed>
-        <li>項目1</li>
-        <li>項目2</li>
-        <li>項目3</li>
-    </ol>
-    <p>※リスト番号を1以外から始めたい場合&lt;ol start="開始番号"&gt;</p>
-    <ol start="5">
-        <li>項目1</li>
-        <li>項目2</li>
-        <li>項目3</li>
-    </ol>
-    <h2 id="10">&lt;strong&gt;タグとは？</h2>
-    <p>囲んだテキストが<strong>強調したい重要な要素</strong>であることを示すタグ、太字で表示される。</p>
-    <ul class="komelist">
-        <li>
-            &lt;b&gt;タグでも同様に<b>太字</b>で表示されるが、見た目を他と区別する用途で使用する。
-        </li>
-        <li>
-            &lt;em&gt;強勢するテキストを表すときに使用する。<em>イタリック</em>で表示される。
-        </li>
-        <li>
-            &lt;mark&gt;テキストをハイライトし、ユーザーが見やすいように目立たせる。テキスト背景が<mark>黄色</mark>になる。
-        </li>
-    </ul>
-    <p>&lt;strong&gt;と&lt;b&gt;は見た目は同じ。SEO上の優劣もない。<br>
-        太字に強調することが意味を持つかどうかで使い分ける。 → &lt;strong&gt;タグの無意味な乱用は避けた方が無難。
-    </p>
-    <h2 id="11">&lt;pre&gt;&lt;code&gt;タグとは？</h2>
-    <p><span>Pre</span>formatted text＝整形済みテキスト</p>
-    <ul>
-        <li>
-            スペースや改行、HTMLのソースコードをそのまま表示したいときに使用する
-        </li>
-        <li>
-            &lt;pre&gt;タグで囲んだ要素は、コード内に&lt;br&gt;を入れなくても改行がそのまま反映される
-        </li>
-        <li>
-            要素が横長になり折り返し表示したい場合は、cssで「white-spase:pre-wrap;」を適用する。
-        </li>
-        <li>
-            横スクロールさせたい場合は、「overflow-x:auto;」を適用する。
-        </li>
-        <li>
-            class、id、title、langの属性を使用することができる ※cols、width、wrap属性は非推奨
-        </li>
-    </ul>
-    <ul>
-        <li>
-            &lt;code&gt;タグとは、囲んだ要素がソースコードであることを示すタグ
-        </li>
-        <li>
-            &lt;pre&gt;タグとセットで使用することが多い
-        </li>
-    </ul>
-    <p>※どちらの使用下でも&lt; &gt;で囲むとコードに変換されてしまうので、特殊文字としてコード記述する必要がある。
-    </p>
+            <p>コード反映すると以下のようになる。</p>
+            <div class="codeex preview">
+                <table>
+                    <tr>
+                        <th>名前</th>
+                        <th>性別</th>
+                        <th>年齢</th>
+                    </tr>
+                    <tr>
+                        <td>山田</td>
+                        <td>女</td>
+                        <td>19</td>
+                    </tr>
+                    <tr>
+                        <td>木村</td>
+                        <td colspan="2">不明</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </section>
+    <section>
+        <h2 id="07">&lt;h1&gt;タグとは？</h2>
+        <p><span>H</span>eading＝見出し　※h1~h6まで存在、数字が小さいほど重要度が高い</p>
+        <ul>
+            <li>
+                &lt;h1&gt;タグは最上位の見出しを示す、&lt;title&gt;タグの次に重要なタグ
+            </li>
+            <li>
+                ページ内容を簡潔に表すテキストを記載するためのタグ
+            </li>
+            <li>
+                ページ内に1つしか存在してはいけない！
+            </li>
+        </ul>
+        <ul class="komelist">
+            <li>
+                hタグはブロックレベル要素。spanやimagなどインライン要素を含むこともOK
+            </li>
+        </ul>
+        <ul class="komelist">
+            <li>
+                &lt;h1&gt;タグの役割はクローラーにページの内容や構造を伝えること！デザイン変更の用途で使用するのはNG
+            </li>
+            <li>
+                &lt;h1&gt;タグにはSEO対策のキーワードを含め、簡潔に記述する（30～50文字）
+            </li>
+            <li>
+                &lt;h1&gt;に画像を使用してもOK、その場合SEO対策として画像内容を認識させるため&lt;img src="~.jpg" alt="画像の説明"&gt;
+            </li>
+        </ul>
+    </section>
+    <section>
+        <h2 id="08">&lt;h2&gt;タグとは？</h2>
+        <p>&lt;h1&gt;大見出し…ページ内容やタイトル<br>
+            &lt;h2&gt;中見出し…ページ内の章の見出し<br>
+            &lt;h3&gt;小見出し…各章のポイントとなる見出し<br>
+            &lt;h4&gt;～&lt;h6&gt;…h3の補足など</p>
+        <ul class="komelist">
+            <li>
+                hタグにidで名前をつけて、ページ内リンクを作ることもできる。そのため、idは同じページ内に複数存在NG！<br>
+                &lt;o&gt;&lt;a href="~~"&gt;見出し&lt;/a&gt;&lt;/p&gt; → &lt;h2 id="~~"&gt;見出し&lt;/h2&gt;
+            </li>
+        </ul>
+    </section>
+    <section>
+        <h2 id="09">&lt;ol&gt;&lt;li&gt;タグとは？</h2>
+        <p><span>O</span>rdered <span>L</span>ist＝順序のある箇条書き</p>
+        <ol>
+            <li>項目1</li>
+            <li>項目2</li>
+            <li>項目3</li>
+        </ol>
+        <p>※デフォルトではリストは昇順（1，2，3…）、降順（3，2，1）にしたい場合は&lt;ol reversed&gt;</p>
+        <ol reversed>
+            <li>項目1</li>
+            <li>項目2</li>
+            <li>項目3</li>
+        </ol>
+        <p>※リスト番号を1以外から始めたい場合&lt;ol start="開始番号"&gt;</p>
+        <ol start="5">
+            <li>項目1</li>
+            <li>項目2</li>
+            <li>項目3</li>
+        </ol>
+    </section>
+    <section>
+        <h2 id="10">&lt;strong&gt;タグとは？</h2>
+        <p>囲んだテキストが<strong>強調したい重要な要素</strong>であることを示すタグ、太字で表示される。</p>
+        <ul class="komelist">
+            <li>
+                &lt;b&gt;タグでも同様に<b>太字</b>で表示されるが、見た目を他と区別する用途で使用する。
+            </li>
+            <li>
+                &lt;em&gt;強勢するテキストを表すときに使用する。<em>イタリック</em>で表示される。
+            </li>
+            <li>
+                &lt;mark&gt;テキストをハイライトし、ユーザーが見やすいように目立たせる。テキスト背景が<mark>黄色</mark>になる。
+            </li>
+        </ul>
+        <p>&lt;strong&gt;と&lt;b&gt;は見た目は同じ。SEO上の優劣もない。<br>
+            太字に強調することが意味を持つかどうかで使い分ける。 → &lt;strong&gt;タグの無意味な乱用は避けた方が無難。
+        </p>
+    </section>
+    <section>
+        <h2 id="11">&lt;pre&gt;&lt;code&gt;タグとは？</h2>
+        <p><span>Pre</span>formatted text＝整形済みテキスト</p>
+        <ul>
+            <li>
+                スペースや改行、HTMLのソースコードをそのまま表示したいときに使用する
+            </li>
+            <li>
+                &lt;pre&gt;タグで囲んだ要素は、コード内に&lt;br&gt;を入れなくても改行がそのまま反映される
+            </li>
+            <li>
+                要素が横長になり折り返し表示したい場合は、cssで「white-spase:pre-wrap;」を適用する。
+            </li>
+            <li>
+                横スクロールさせたい場合は、「overflow-x:auto;」を適用する。
+            </li>
+            <li>
+                class、id、title、langの属性を使用することができる ※cols、width、wrap属性は非推奨
+            </li>
+        </ul>
+        <ul>
+            <li>
+                &lt;code&gt;タグとは、囲んだ要素がソースコードであることを示すタグ
+            </li>
+            <li>
+                &lt;pre&gt;タグとセットで使用することが多い
+            </li>
+        </ul>
+        <p>※どちらの使用下でも&lt; &gt;で囲むとコードに変換されてしまうので、特殊文字としてコード記述する必要がある。
+        </p>
+    </section>
     <p class="link"><a href="index.html">&lt;&lt; home</a></p>
 </body>
 

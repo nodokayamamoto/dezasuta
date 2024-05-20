@@ -9,110 +9,69 @@ h3 {
   display: flex;
   justify-content: space-between;
 }
-.code {
+.preview {
   width: 40%;
   padding: 20px;
-  background-color: #f3f2f0;
 }
-.codeex {
-  width: 40%;
+.previewfull {
+  max-width: 80%;
   padding: 20px;
   background-color: #d6bcaf;
+  margin: 0 auto;
+  display: flex;
 }
-.box {
+.preview > div,
+.previewfull > div {
   background-color: #333333;
   border: 1px solid #ffffff;
   width: 10%;
   height: 30px;
 }
+.code {
+  background-color: #f3f2f0;
+}
+.codeex {
+  background-color: #d6bcaf;
+}
 .flex {
-  width: 40%;
-  padding: 20px;
   text-align: center;
   background-color: #d6bcaf;
   display: flex;
 }
 .gap {
-  max-width: 80%;
-  padding: 20px;
-  background-color: #d6bcaf;
-  margin: 0 auto;
-  display: flex;
   gap: 20px;
 }
 .migiyose {
-  max-width: 80%;
-  padding: 20px;
-  background-color: #d6bcaf;
-  margin: 0 auto;
-  display: flex;
   justify-content: flex-end;
 }
 .center {
-  max-width: 80%;
-  padding: 20px;
-  background-color: #d6bcaf;
-  margin: 0 auto;
-  display: flex;
   justify-content: center;
 }
 .between {
-  max-width: 80%;
-  padding: 20px;
-  background-color: #d6bcaf;
-  margin: 0 auto;
-  display: flex;
   justify-content: space-between;
 }
-.box1 {
+.big + div {
   background-color: #333333;
   border: 1px solid #ffffff;
   width: 10%;
-  height: 50px;
+  height: 60px;
 }
 .ue {
-  max-width: 80%;
-  padding: 20px;
-  background-color: #d6bcaf;
-  margin: 0 auto;
-  display: flex;
   justify-content: center;
   align-items: flex-start;
   gap: 20px;
 }
 .shita {
-  max-width: 80%;
-  padding: 20px;
-  background-color: #d6bcaf;
-  margin: 0 auto;
-  display: flex;
   justify-content: center;
   align-items: flex-end;
   gap: 20px;
 }
 .chuou {
-  max-width: 80%;
-  padding: 20px;
-  background-color: #d6bcaf;
-  margin: 0 auto;
-  display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
 }
-.kaigyou {
-  max-width: 80%;
-  padding: 20px;
-  background-color: #d6bcaf;
-  margin: 0 auto;
-  display: flex;
-}
 .wrap {
-  max-width: 80%;
-  padding: 20px;
-  background-color: #d6bcaf;
-  margin: 0 auto;
-  display: flex;
   flex-wrap: wrap;
   gap: 20px;
 }
@@ -135,30 +94,19 @@ h3 {
   .sample {
     display: block;
   }
-  .code {
-    width: 80%;
-    padding: 20px;
-    margin: 10px auto;
-    background-color: #f3f2f0;
-  }
+  .code,
   .codeex {
     width: 80%;
-    padding: 20px;
     margin: 10px auto;
-    background-color: #d6bcaf;
   }
   .flex {
     width: 80%;
-    padding: 20px;
     margin: 10px auto;
-    background-color: #d6bcaf;
-    display: flex;
   }
   .sucription {
     text-align: left;
   }
   .sub {
     margin-left: 20px;
-    list-style-type: circle;
   }
 }

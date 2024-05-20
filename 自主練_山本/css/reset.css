@@ -129,7 +129,6 @@ code {
   ul,
   li,
   pre {
-    font-family: "Noto Sans JP", san-serif;
     font-size: 13px;
     line-height: 180%;
   }
@@ -151,7 +150,6 @@ code {
     font-size: 15px;
   }
   code {
-    font-family: "Noto Sans JP", san-serif;
     font-size: 13px;
   }
 }
