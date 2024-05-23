@@ -50,7 +50,7 @@ h2 {
   margin-bottom: 40px;
 }
 h3 {
-  color: #2f5057;
+  color: #97133b;
   font-size: 18px;
   padding: 10px 20px;
   margin-top: 40px;
@@ -61,17 +61,6 @@ p {
 }
 span {
   color: #97133b;
-}
-.top {
-  text-align: center;
-  width: 60%;
-  margin: 0 auto;
-}
-.menu {
-  border: 2px solid #2f5057;
-  width: 40%;
-  padding: 20px;
-  margin: 40px auto;
 }
 ul {
   margin: 20px 40px;
@@ -103,15 +92,6 @@ a:active {
   color: #97133b;
 }
 
-.komelist {
-  margin-left: 34px;
-  list-style: none;
-}
-.komelist li:before {
-  content: "※";
-  margin-left: -14px;
-}
-
 code {
   font-family: "Noto Sans JP", san-serif;
   font-size: 15px;
@@ -136,12 +116,6 @@ code {
     max-width: 747px;
     margin: 0 auto;
     padding: 0 10px;
-  }
-  .top {
-    width: 80%;
-  }
-  .menu {
-    width: 80%;
   }
   h1 {
     font-size: 18px;

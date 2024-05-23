@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第三回コーディング自主練</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/03style.css">
+</head>
+
+<body>
+
+    <div class="top">
+        <h1>第三回講義</h1>
+        <p>
+            JavaScriptの基礎について学習しました。
+        </p>
+    </div>
+    <div class="menu">
+        <ol>
+            <li><a href="#01">JavaScriptとは？</a></li>
+            <li><a href="#02">JavaScriptの基礎</a></li>
+            <li><a href="#03">変数について</a></li>
+        </ol>
+    </div>
+    <section>
+        <h2 id="01">JavaScript（JS）とは？</h2>
+        <p>HTMLやCSSと組み合わせて、ブラウザ上でWebページを<b>動かす</b>ための簡単なプログラミング言語。<br>
+            動的な操作やアニメーション、データの検証や処理などを行うことができる。</p>
+        <p>※JavaはアプリケーションやATMなどの機械をつくるプログラム。名称は似ているがまったく違うモノ。</p>
+    </section>
+    <section>
+        <h2 id="02">JavaScriptの基礎</h2>
+        <section>
+            <h3>JavaScriptを書く場所</h3>
+            <ol>
+                <li>&lt;script&gt;&lt;/script&gt;の中に書く。</li>
+                <li>「～.js」の別ファイルをつくり、&lt;script src="～.js"&gt;&lt;/script&gt;で読み込む。</li>
+            </ol>
+            <p>いずれの場合も、書く位置は<b>&lt;/body&gt;の直前</b>！<br>
+                コードは上から順番に読み込まれるため、まずはhtmlを読み込んでからでないとJSは動かない。</p>
+        </section>
+        <section>
+            <h3>JavaScriptを書く際の注意点</h3>
+            <ul>
+                <li>大文字と小文字を区別して書くこと。</li>
+                <li class="sub">同じ名前をつけても、大文字小文字を間違えるとすべて異なる変数として処理されてしまう。</li>
+                <li>命令の最後に「;」を忘れずに書くこと！</li>
+                <li>「予約語」は小文字で記述する。</li>
+                <li class="sub">予約語：言語内で特別な意味を持つ単語。 ex)break,newなど</li>
+                <li class="sub">予約語を変数名に用いることはできないため注意が必要。</li>
+                <li>単語や文字列の途中で改行を入れるとエラーになる。</li>
+            </ul>
+        </section>
+    </section>
+    <section>
+        <h2 id="03">変数について</h2>
+        <section>
+            <h3>変数とは？</h3>
+            <p>数字や単語などのデータを入れておくための"箱"（保管場所）</p>
+            <div class="preview">
+                <p><span>変数宣言</span> <span>変数名</span> = "<span>変数の中身</span>";</p>
+            </div>
+            <p>変数名の一文字目に数字を使用することはできないため、注意。</p>
+            <p>concole.log(<span>変数名</span>); で変数の結果をディベロッパーツールの「console」に表示させる。<br>
+                ※「console」では、ページの裏側でどのような処理が行われているかを表示する。</p>
+            <p>JavaScriptを記述する際は、var・let・constというキーワードで変数であることを宣言する。</p>
+            <div class="preview">
+                <table>
+                    <tr>
+                        <th class="sel"></th>
+                        <th>var</th>
+                        <th>let</th>
+                        <th>const</th>
+                    </tr>
+                    <tr>
+                        <td class="sel">初期値</td>
+                        <td>省略OK</td>
+                        <td>省略OK</td>
+                        <td>必要</td>
+                    </tr>
+                    <tr>
+                        <td class="sel">再宣言</td>
+                        <td>OK</td>
+                        <td>NG</td>
+                        <td>NG</td>
+                    </tr>
+                    <tr>
+                        <td class="sel">再代入</td>
+                        <td>OK</td>
+                        <td>OK</td>
+                        <td>NG</td>
+                    </tr>
+                </table>
+            </div>
+            <p>基本的には「let」を使うとよい。<br>
+                ※同じページですでに使用されている変数名を再宣言してしまった場合にエラー表示で気づけるため。</p>
+        </section>
+        <section>
+            <h3>変数の型</h3>
+            <div class="preview">
+                <table>
+                    <tr>
+                        <th class="kata">型</th>
+                        <th>データ</th>
+                    </tr>
+                    <tr>
+                        <td class="kata">文字列型</td>
+                        <td class="data">一般的な文字列の意味<br>
+                            " "で囲んで記述する。VScode上ではオレンジ表示。</td>
+                    </tr>
+                    <tr>
+                        <td class="kata">数値型</td>
+                        <td class="data">数値（整数、小数点など）<br>
+                            数字を直接記述する。VScode上では緑色で表示。<br>
+                            ※計算もできる。<br>
+                            ※数値以外の型のデータを「+」でつなぐと、結合されて横並び表示になる。</td>
+                    </tr>
+                    <tr>
+                        <td class="kata">真偽型</td>
+                        <td class="data">true、false</td>
+                    </tr>
+                    <tr>
+                        <td class="kata">配列</td>
+                        <td class="data">データの集合、値を複数入れることができる<br>
+                            [ ]内に、,で区切って入れる。</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section>
+            <h3>条件分岐</h3>
+            <p>「もし～だったらこうなる」という処理をしたい場合、if文を使う。<br>
+                指定した値が条件に一致しない場合は、JavaScriptは動かない。</p>
+            <div class="preview">
+                <p>if (条件) { 条件に一致した場合の処理 }</p>
+            </div>
+            <ul>
+                <li>条件を追加したい場合は、「else if」</li>
+                <li>条件に当てはまらない場合に動かす処理を入れるときは「else」</li>
+            </ul>
+            <div class="preview">
+                <table>
+                    <tr>
+                        <th class="kata">条件</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td class="kata">==</td>
+                        <td class="data">2つの値が等しいとき</td>
+                    </tr>
+                    <tr>
+                        <td class="kata">===</td>
+                        <td class="data">2つ<b>値</b>と<b>型</b>が等しいときに、<b>true</b>を返す</td>
+                    </tr>
+                    <tr>
+                        <td class="kata">!=</td>
+                        <td class="data">2つの値が<b>等しくない</b>ときに<b>true</b>を返す</td>
+                    </tr>
+                    <tr>
+                        <td class="kata">!==</td>
+                        <td class="data">2つのデータの値と型の<b>いずれかが等しくない</b>ときに<b>true</b>を返す</td>
+                    </tr>
+                    <tr>
+                        <td class="kata">&lt;</td>
+                        <td class="data">左の値が右の値より小さい時、trueを返す</td>
+                    </tr>
+                    <tr>
+                        <td class="kata">&lt;=</td>
+                        <td class="data">左の値が右の値<b>以下</b>のとき、trueを返す</td>
+                    </tr>
+                    <tr>
+                        <td class="kata">&gt;</td>
+                        <td class="data">左の値が右の値より大きい時、trueを返す</td>
+                    </tr>
+                    <tr>
+                        <td class="kata">&gt;=</td>
+                        <td class="data">左の値が右の値<b>以上</b>のとき、trueを返す</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section>
+            <h3>繰り返し処理</h3>
+            <p>同じ処理を繰り返し行いたい場合、for文やwhile文を使う。</p>
+            <div class="preview">
+                <p>for ( 初期値の設定 ; 条件式 ; 繰り返しの最後に行う処理 ){ 繰り返したい処理 ; }
+                </p>
+            </div>
+            <p>繰り返しの回数が決まっている場合に使用する。</p>
+            <ol>
+                <li><span>初期値の設定</span>で変数の宣言をする</li>
+                <li><span>条件式</span>の評価結果が true なら次のステップへ、false なら終了する</li>
+                <li><span>繰り返したい処理</span>を実行する</li>
+                <li><span>繰り返しの最後に行う処理</span>を実行する</li>
+                <li>ステップ2へ戻る</li>
+            </ol>
+            <div class="preview">
+                <p>while ( 条件式 ) { 実行する処理 ;}</p>
+            </div>
+            <p>繰り返しの回数が決まっていない場合に使用する。</p>
+            <ol>
+                <li><span>条件式</span>の評価結果が true なら次のステップへ、false なら終了する</li>
+                <li><span>実行する処理</span>を実行する</li>
+                <li>ステップ1へ戻る</li>
+            </ol>
+            <p><span>実行する処理</span>の中に<span>条件式</span>の評価結果が false になる処理を書かないと、<b>無限ループ</b>が起こる！<br>
+                ブラウザが壊れてしまうので、繰り返し処理を抜け出す「終わり」を必ず指定すること。</p>
+        </section>
+    </section>
+    <p class="link"><a href="index.html">&lt;&lt; home</a></p>
+</body>
+
+</html>
