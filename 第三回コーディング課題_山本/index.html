@@ -10,41 +10,42 @@
 </head>
 
 <body>
-    <h1>サービス</h1>
-    <div class="container">
-        <div class="box">
-            <div class="image">
-                <img src="./images/main_1.jpg">
-            </div>
-            <div class="contents">
-                <h2>サービス1</h2>
-                <p>サービス1サービス1サービス1サービス1サービス1サービス1サービス1</p>
-            </div>
+    <section>
+        <h1>サービス</h1>
+        <div class="container">
+            <section>
+                <div class="image">
+                    <img src="./images/main_1.jpg">
+                </div>
+                <div class="contents">
+                    <h2>サービス1</h2>
+                    <p>サービス1サービス1サービス1サービス1サービス1サービス1サービス1</p>
+                </div>
+            </section>
+            <section>
+                <div class="image">
+                    <img src="./images/main_2.png">
+                </div>
+                <div class="contents">
+                    <h2>サービス2</h2>
+                    <p>サービス2サービス2サービス2サービス2サービス2サービス2サービス2</p>
+                </div>
+            </section>
+            <section>
+                <div class="image">
+                    <img src="./images/main_3.png">
+                </div>
+                <div class="contents">
+                    <h2>サービス3</h2>
+                    <p>サービス3サービス3サービス3サービス3サービス3サービス3サービス3</p>
+                </div>
+            </section>
         </div>
-        <div class="box">
-            <div class="image">
-                <img src="./images/main_2.png">
-            </div>
-            <div class="contents">
-                <h2>サービス2</h2>
-                <p>サービス2サービス2サービス2サービス2サービス2サービス2サービス2</p>
-            </div>
-        </div>
-        <div class="box">
-            <div class="image">
-                <img src="./images/main_3.png">
-            </div>
-            <div class="contents">
-                <h2>サービス3</h2>
-                <p>サービス3サービス3サービス3サービス3サービス3サービス3サービス3</p>
-            </div>
-        </div>
-    </div>
+    </section>
     <script>
-        let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
         let num = 0;
-        for (i = 0; i < array.length; i++) {
-            num = num + array[i];
+        for (i = 1; i <= 10; i++) {
+            num += i;
         }
         if (num >= 20) {
             console.log('20以上');

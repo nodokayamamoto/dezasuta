@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+html,
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dt,
+dd,
+ul,
+li,
+pre,
+input {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, "游明朝", YuMincho, "Hiragino Mincho ProN", Meiryo,
+    serif;
+  line-height: 180%;
+  color: #777777;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+  border: none;
+}
+
+body {
+  max-width: 1035px;
+  margin: 60px auto;
+}
+
+h1 {
+  color: #111111;
+  font-size: 36px;
+  line-height: 120%;
+}
+h2 {
+  color: #111111;
+  font-size: 22px;
+}
+p {
+  font-size: 17px;
+}
+strong {
+  color: #111111;
+  font-size: 19px;
+}
+a {
+  text-decoration: none;
+}
+a:link,
+a:visited {
+  color: #111111;
+}
+a:hover,
+a:active {
+  color: #c49029;
+}
+input {
+  text-rendering: auto;
+  color: fieldtext;
+  letter-spacing: normal;
+  word-spacing: normal;
+  line-height: 180%;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  appearance: auto;
+  -webkit-rtl-ordering: logical;
+  cursor: text;
+  background-color: field;
+  margin: 0em;
+  padding: 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #e6e6e6;
+  border-image: initial;
+}
+@media screen and (max-width: 767px) {
+  body {
+    width: 90%;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 19px;
+  }
+  p {
+    font-size: 14px;
+  }
+}
