@@ -1,21 +1,40 @@
 @charset "utf-8";
 
-header {
-  max-width: 1035px;
-}
+/* 画面幅 */
+
 header,
-nav,
-#menu {
+main,
+footer {
+  max-width: 1035px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+/* header */
+
+header {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+header,
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 #title {
   width: 20%;
 }
+#site-description p {
+  font-size: 18px;
+}
 #menu {
+  display: flex;
+  justify-content: space-between;
   width: 70%;
-  padding: 20px 0 0 0;
+  gap: 20px;
 }
 #menu li {
   font-size: 17px;
@@ -24,18 +43,55 @@ nav,
 #menu a {
   text-decoration: none;
 }
-#site-description p {
-  font-size: 18px;
+.submenu {
+  opacity: 0;
+  visibility: hidden;
+  width: 200px;
+  position: absolute;
+  border: 1px solid #e6e6e6;
+  margin-left: 20px;
+  transition: all 0.5s;
 }
-#fv {
-  margin: 70px auto;
+.submenu li {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e6e6e6;
+  padding: 5px 10px;
+}
+
+.popup:hover .submenu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup > a {
+  position: relative;
+}
+
+.popup > a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -20px;
+  display: block;
+  width: 7px;
+  height: 7px;
+  margin-left: 7px;
+  border-top: 2px solid gray;
+  border-right: 2px solid gray;
+  transform: rotate(135deg);
+}
+
+/* main */
+
+main {
+  max-width: 1035px;
+  margin: 0 auto;
 }
 #top_text p {
   font-size: 27px;
   margin: 90px auto;
 }
 .entry {
-  max-width: 1035px;
   margin: 60px auto;
   display: flex;
   justify-content: space-between;
@@ -50,6 +106,9 @@ nav,
 .entry_contents h2 {
   margin-bottom: 20px;
 }
+
+/* page link */
+
 .page_links {
   display: flex;
   justify-content: center;
@@ -67,6 +126,8 @@ nav,
 .page_links a {
   text-decoration: none;
 }
+
+/* footer */
 
 .footer_top {
   max-width: 1035px;
@@ -137,7 +198,7 @@ nav,
 .footer_bottom p {
   font-size: 15px;
 }
-.footer_botoom a {
+.footer_bottom a {
   color: #777777;
 }
 .footer_bottom a:hover {
@@ -146,16 +207,17 @@ nav,
 .footer_bottom a:visited {
   color: #666666;
 }
+
 @media screen and (max-width: 767px) {
-  #title {
-    width: 100%;
+  /* 画面幅 */
+  header,
+  main,
+  footer {
+    max-width: 767px;
   }
-  #fv {
-    width: 100%;
-  }
-  #site-description p {
-    font-size: 15px;
-  }
+
+  /* flex解除 */
+
   header,
   nav,
   #menu,
@@ -164,6 +226,22 @@ nav,
   .footer_bottom {
     display: block;
   }
+
+  /* header */
+
+  #title {
+    width: 100%;
+  }
+  #site-description p {
+    font-size: 15px;
+  }
+
+  /* main */
+
+  #fv {
+    margin: 0 calc(50% - 50vw);
+  }
+
   #top_text p {
     font-size: 23px;
     margin: 60px auto;
@@ -178,6 +256,8 @@ nav,
   .entry_contents h2 {
     margin-bottom: 15px;
   }
+
+  /* footer */
 
   .footer_contents,
   .footer_contents:first-child {

@@ -2,22 +2,15 @@
 
 /* 画面幅 */
 .top,
-#about,
-#menu,
-#gallery,
-#event,
-#access {
+.contents {
   max-width: 1000px;
   margin: 100px auto 0 auto;
+  padding: 0 10px;
 }
 
 /* 各セクションアイコン */
 
-.about_icon img,
-.menu_icon img,
-.gallery_icon img,
-.event_icon img,
-.access_icon img {
+.icon img {
   height: 78px;
 }
 
@@ -71,16 +64,19 @@ header {
 .top {
   text-align: center;
 }
-.sub_copy1 {
+.top :first-child {
   font-size: 30px;
   padding-bottom: 60px;
 }
-.copy {
+.top :nth-child(2) {
   font-size: 82px;
+  letter-spacing: 0.1em;
+  line-height: 1.17;
   padding-bottom: 45px;
 }
-.sub_copy2 {
+.top :last-child {
   font-size: 23px;
+  letter-spacing: 0.1em;
   line-height: 1.65;
 }
 
@@ -152,7 +148,7 @@ header {
   margin: 0 calc(50% - 50vw);
 }
 .gallery_slider img {
-  height: 300px;
+  width: 20%;
 }
 
 /* event */
@@ -165,6 +161,7 @@ header {
   height: 200px;
   background-color: #ffffff;
   border: 3px solid #4f260b;
+  box-sizing: border-box;
   position: relative;
 }
 .news {

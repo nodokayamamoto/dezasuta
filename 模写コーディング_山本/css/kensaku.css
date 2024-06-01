@@ -6,24 +6,32 @@
   top: 10px;
   right: 10px;
   width: 250px;
+  text-align: right;
 }
 
 /*テキスト入力input設定*/
 #search-text {
   appearance: none; /*SafariやChromeのデフォルトの設定を無効*/
-  width: 60px; /*テキスト入力エリアが伸びる前の横幅*/
-  height: 60px;
+  width: 50px; /*テキスト入力エリアが伸びる前の横幅*/
+  height: 50px;
   border: none;
   background: #fff url("../img/icon_search.svg") no-repeat 17px center; /*虫眼鏡アイコンを背景に表示*/
   background-size: 25px 25px;
   outline: none;
   cursor: pointer; /*カーソルを指マークに*/
+  transition: 0.4s;
+}
+#search-text::placeholder {
+  color: transparent;
 }
 
 /*テキスト入力inputにフォーカスした時の形状*/
 #search-text:focus {
   width: 180px; /*テキスト入力エリアが伸びる後の横幅*/
-  border: 1px solid #777777;
+  border: 1px solid #e6e6e6;
   padding: 0 0 0 45px;
   transition: width 0.4s ease, background 0.4s ease;
+}
+#search-text:focus::placeholder {
+  color: #777777;
 }
