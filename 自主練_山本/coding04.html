@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第四回コーディング自主練</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/04style.css">
+</head>
+
+<body>
+
+    <div class="top">
+        <h1>第四回講義</h1>
+        <p>
+            ilustratorのデザインカンプから<br>
+            サイトをコーディングする方法について学習しました。
+        </p>
+    </div>
+    <div class="menu">
+        <ol>
+            <li><a href="#01">Ilustratorから値を取得する</a></li>
+            <li><a href="#02">地図を埋め込む</a></li>
+            <li><a href="#03">positionについて</a></li>
+        </ol>
+    </div>
+    <section>
+        <h2 id="01">Ilustratorから値を取得する</h2>
+        <p>カンプからコーディングに必要な値を取得する。</p>
+        <section>
+            <h3>余白</h3>
+            <div class="container">
+                <div>
+                    <div class="monosashi">
+                        <h4>ものさしツール</h4>
+                        <p>『Shift』キーを押しながら、縦横のおおよその長さを測る。</p>
+                        <div class="monosashi_circle"></div>
+                    </div>
+                    <div class="tyouhoukei">
+                        <h4>長方形ツール</h4>
+                        <p>余白分の長方形シェイプをつくり、その大きさで長さを測る。</p>
+                        <p>※ シェイプの置き忘れに注意！<br>
+                            別の人が同じファイルを開いたときに、要素としてコーディングしてしまうかも。<br>
+                            目立つ派手な色をつける、ファイルを保存せずに閉じるなどの対策を。</p>
+                        <div class="tyouhoukei_circle"></div>
+                    </div>
+                </div>
+                <img src="./images/toolbar.png">
+            </div>
+        </section>
+        <section>
+            <h3>文字</h3>
+            <div class="container">
+                <div>
+                    <div class="heading fontsize">
+                        <h4>フォントサイズ</h4>
+                        <code>font-size</code>
+                        <div class="fontsize_circle"></div>
+                    </div>
+                    <div class="heading gyoudaka">
+                        <h4>行高</h4>
+                        <code>line-height</code>
+                        <div class="gyoudaka_circle"></div>
+                    </div>
+                    <p><span>行高 / フォントサイズ</span>で設定する</p>
+                    <p>固定値で設定すると、<br>
+                        フォントサイズを調整するときに余白が崩れてしまう。<br>
+                        必ず倍率で指定すること。</p>
+                    <div class="heading va">
+                        <h4>文字の間隔（カーニング）</h4>
+                        <code>letter-spacing</code>
+                        <div class="va_circle"></div>
+                    </div>
+                    <p><span>VA値 / 1000 em</span>で設定する</p>
+                    <div class="heading tracking">
+                        <h4 class="item">トラッキング</h4>
+                        <code>font-feature-setting</code>
+                        <div class="tracking_circle"></div>
+                    </div>
+                    <p>「メトリクス」や「オプティカル」のときは<span>"palt"</span>に設定する</p>
+                </div>
+                <div class="image">
+                    <img src="./images/text.png">
+                </div>
+            </div>
+        </section>
+        <section>
+            <h3>色</h3>
+            <div class="container">
+                <div>
+                    <div class="heading">
+                        <h4>色</h4>
+                        <code>color</code>
+                    </div>
+                    <p>文字色や背景色の指定時に確認する。</p>
+                    <p>RGB … <span>rgb(〇,〇,〇)</span><br>
+                        カラーコード … <span>#〇〇〇〇〇〇</span></p>
+                </div>
+                <div class="image">
+                    <img src="./images/color.png">
+                </div>
+            </div>
+        </section>
+        <section>
+            <h3>画像</h3>
+            <div class="container">
+                <div>
+                    <div class="heading picsize">
+                        <h4>大きさ</h4>
+                        <code>width , height</code>
+                        <div class="picsize_circle"></div>
+                    </div>
+                    <p>コーディングの際は、widthかheightのどちらかを設定する。<br>
+                        元の画像と比率が変わった際に、見た目が崩れてしまうため。</p>
+                    <div class="heading radius">
+                        <h4>角丸</h4>
+                        <code>border-radius</code>
+                        <div class="radius_circle"></div>
+                    </div>
+                    <p><span>50%</span>に指定すると、四角い画像を丸く切り取ることができる。<br>
+                        指定した角のみ丸くすることもできる</p>
+                </div>
+                <div class="image">
+                    <img src="./images/shapes.png">
+                </div>
+            </div>
+            <div class="explain">
+                <div class="heading">
+                    <h4>画像を貼り付けるときの注意点</h4>
+                    <code>&lt;img src="～～" alt="説明テキスト"&gt;</code>
+                </div>
+                <p>画像が読み込まれなかった場合に、どんな画像がわかるように説明文をつけておく。<br>
+                    特にh1タグなどに画像を使用するときには、説明文がないとSEOに悪影響。</p>
+            </div>
+            <div class="explain">
+                <h4>画像データの書き出し</h4>
+                <ol>
+                    <li>メニューバーからウィンドウを選択</li>
+                    <li>アセットの書き出し</li>
+                    <li>書き出したい画像をドラッグ＆ドロップ</li>
+                    <li>画像に名前をつける</li>
+                    <li>倍率を設定する （1x or 2x）</li>
+                    <li>形式を選択する</li>
+                    <li>書き出す</li>
+                </ol>
+                <p>ピクセルデータ … 光の粒で画像をつくる。データ容量が大きくなり、拡大すると粒が荒れて見える</p>
+                <ul>
+                    <li>PNG … 画像に透過の部分があるとき、アイコンなど小サイズでシンプルなもの</li>
+                    <li>JPG … 透過はNG、高画質で保存できる。画質は基本的には80を選択すればOK</li>
+                </ul>
+                <p>ベクターデータ … 数式で画像をつくる。細部まで荒れない画像になるが、細かい描写は再現できない。</p>
+                <ul>
+                    <li>SVG … ロゴやアイコンなどシンプルな画像に適している。cssで色を変えることもOK</li>
+                </ul>
+                <p>☆ WebP … 高圧縮率、画質の劣化も少なく、透過OK、アニメーションOK。まだ対応ブラウザが少ない。</p>
+
+            </div>
+        </section>
+    </section>
+    <section>
+        <h2 id="02">地図を埋め込む</h2>
+        <p>iframeを使ってGooglemapの地図をサイトに貼り付ける方法。</p>
+        <ol>
+            <li>Googlemapで表示したい地図の場所を検索する。</li>
+            <li>共有をクリック</li>
+            <li>「地図を埋め込む」を選択</li>
+            <li>コードをコピーしてページに貼り付ける</li>
+        </ol>
+        <p>コード内のwidthとheightは削除し、ページデザインに合わせて再設定する。<br>
+            iframeは高さを持たない要素なので、height設定は必須。</p>
+        <p>そのまま貼り付けると、imgと同様に下にすき間ができる。<br>
+            cssで『display:block;』を設定する。</p>
+    </section>
+    <section>
+        <h2 id="03">positionについて</h2>
+        <p>特定の場所に要素を配置したいときには、『position』を設定する。<br>
+            ex) スクロール追従ボタン、固定ヘッダーなど</p>
+        <div class="explain">
+            <h4>position:relative;</h4>
+            <p>「relative=相対的な」</p>
+            <p>指定の位置に配置したい要素の基準となる要素（親要素）を設定する。</p>
+            <h4>position:absolute;</h4>
+            <p>「absolute＝絶対的な」</p>
+            <p>基準となる要素に対して、指定した位置に要素を配置する。<br>
+                必ずrelativeやfixedと一緒に使用する。</p>
+            <h4>position:fixed;</h4>
+            <p>画面から見た位置で要素を固定する。<br>
+                画面をスクロールしても、指定した位置にずっと表示され続けるスクロール追従要素をつくることができる。<br>
+                要素の重なり順に注意する必要がある。</p>
+            <h4>position:sticky;</h4>
+            <p>親・兄弟要素に対して要素を固定する。</p>
+            <p>兄弟要素がないと機能しない点に注意が必要。<br>
+                position: stickyには、stickyにする要素と、stickyを収めるコンテナ要素が必要。<br>
+                position: stickyを指定することで、親要素が自動的にコンテナ要素として定義される。<br>
+                その場合、stickyとなる要素は兄弟要素上でしか固定することができないため、兄弟要素が必要となる。</p>
+            <h4>position:static;</h4>
+            <p>「static＝静的な」</p>
+            <p>positionの初期値。<br>
+                positionをリセットしたいときに使う。</p>
+        </div>
+        <div class="explain">
+            <p>位置を指定するときは、上下と左右でそれぞれどちらかを指定する。</p>
+            <p>ex) 画面右から50px、下から50pxの位置に要素を固定したいとき。<br>
+                <code>right:50px;<br>
+                    botom:50px;</code>
+            </p>
+        </div>
+        <p>固定配置したときに、要素のpadding分余白ができることがある。<br>
+            → 「box-sizing:border-box;」ボーダーまで含めて要素の大きさであることを設定する。</p>
+    </section>
+    <a href="index.html" class="btn"><img src="./images/home.png"></a>
+</body>
+
+</html>

@@ -102,6 +102,7 @@ header {
 .about_copy {
   font-size: 44px;
   padding-bottom: 30px;
+  line-height: 1.38;
 }
 .about_text {
   line-height: 1.625;

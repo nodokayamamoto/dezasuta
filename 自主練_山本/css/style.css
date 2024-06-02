@@ -31,6 +31,11 @@
   text-align: center;
   margin: 40px auto;
 }
+.btn {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+}
 @media screen and (max-width: 767px) {
   .top {
     width: 80%;

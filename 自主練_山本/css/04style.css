@@ -1,0 +1,245 @@
+@charset "utf=8";
+
+h4 {
+  color: #333333;
+}
+code {
+  color: #97133b;
+  font-style: bold;
+}
+span {
+  background-color: #ffffff;
+  padding: 0 5px;
+}
+
+.container {
+  max-width: 90%;
+  padding: 20px 40px;
+  background-color: #f3f2f0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+.heading {
+  display: flex;
+  gap: 20px;
+  align-items: flex-end;
+  margin-top: 30px;
+}
+.explain {
+  max-width: 90%;
+  padding: 20px 40px;
+  background-color: #d6bcaf;
+  margin: 20px auto;
+}
+
+/* ものさしツール */
+
+.monosashi {
+  position: relative;
+  cursor: pointer;
+}
+.monosashi_circle {
+  width: 2rem;
+  height: 2rem;
+  border: solid 4px #ff0000;
+  border-radius: 50%;
+  position: absolute;
+  top: 390px;
+  right: -307px;
+  opacity: 0;
+  visibility: hidden;
+}
+.monosashi:hover {
+  opacity: 0.8;
+}
+.monosashi:hover .monosashi_circle {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* 長方形ツール */
+
+.tyouhoukei {
+  position: relative;
+  cursor: pointer;
+}
+.tyouhoukei_circle {
+  width: 2rem;
+  height: 2rem;
+  border: solid 4px #ff0000;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: -307px;
+  opacity: 0;
+  visibility: hidden;
+}
+.tyouhoukei:hover {
+  opacity: 0.8;
+}
+.tyouhoukei:hover .tyouhoukei_circle {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* フォントサイズ */
+
+.fontsize {
+  position: relative;
+  cursor: pointer;
+}
+.fontsize_circle {
+  width: 8rem;
+  height: 2rem;
+  border: solid 4px #ff0000;
+  border-radius: 50%;
+  position: absolute;
+  top: 195px;
+  right: -290px;
+  opacity: 0;
+  visibility: hidden;
+}
+.fontsize:hover {
+  opacity: 0.8;
+}
+.fontsize:hover .fontsize_circle {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* 行高 */
+
+.gyoudaka {
+  position: relative;
+  cursor: pointer;
+}
+.gyoudaka_circle {
+  width: 8rem;
+  height: 2rem;
+  border: solid 4px #ff0000;
+  border-radius: 50%;
+  position: absolute;
+  top: 140px;
+  right: -430px;
+  opacity: 0;
+  visibility: hidden;
+}
+.gyoudaka:hover {
+  opacity: 0.8;
+}
+.gyoudaka:hover .gyoudaka_circle {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* カーニング */
+
+.va {
+  position: relative;
+  cursor: pointer;
+}
+.va_circle {
+  width: 8rem;
+  height: 2rem;
+  border: solid 4px #ff0000;
+  border-radius: 50%;
+  position: absolute;
+  top: -17px;
+  right: -430px;
+  opacity: 0;
+  visibility: hidden;
+}
+.va:hover {
+  opacity: 0.8;
+}
+.va:hover .va_circle {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* トラッキング */
+
+.tracking {
+  position: relative;
+  cursor: pointer;
+}
+.tracking_circle {
+  width: 8rem;
+  height: 2rem;
+  border: solid 4px #ff0000;
+  border-radius: 50%;
+  position: absolute;
+  top: -115px;
+  right: -290px;
+  opacity: 0;
+  visibility: hidden;
+}
+.tracking:hover {
+  opacity: 0.8;
+}
+.tracking:hover .tracking_circle {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* 画像の大きさ */
+
+.picsize {
+  position: relative;
+  cursor: pointer;
+}
+.picsize_circle {
+  width: 8rem;
+  height: 4rem;
+  border: solid 4px #ff0000;
+  border-radius: 50%;
+  position: absolute;
+  top: -17px;
+  right: -430px;
+  opacity: 0;
+  visibility: hidden;
+}
+.picsize:hover {
+  opacity: 0.8;
+}
+.picsize:hover .picsize_circle {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* 角丸 */
+
+.radius {
+  position: relative;
+  cursor: pointer;
+}
+.radius_circle {
+  width: 16rem;
+  height: 6rem;
+  border: solid 4px #ff0000;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: -430px;
+  opacity: 0;
+  visibility: hidden;
+}
+.radius:hover {
+  opacity: 0.8;
+}
+.radius:hover .radius_circle {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media screen and (max-width: 767px) {
+  .heading {
+    display: block;
+  }
+  img {
+    display: none;
+  }
+}
