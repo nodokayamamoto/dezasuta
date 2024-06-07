@@ -2,6 +2,10 @@
 
 h4 {
   color: #333333;
+  cursor: pointer;
+}
+h4:hover {
+  opacity: 0.5;
 }
 code {
   color: #97133b;
@@ -37,204 +41,132 @@ span {
 
 /* ものさしツール */
 
-.monosashi {
+.toolbar_image {
+  width: 4.5%;
   position: relative;
+}
+
+.monosashi {
   cursor: pointer;
 }
 .monosashi_circle {
-  width: 2rem;
-  height: 2rem;
+  width: 80%;
+  height: 5%;
   border: solid 4px #ff0000;
   border-radius: 50%;
   position: absolute;
-  top: 390px;
-  right: -307px;
-  opacity: 0;
-  visibility: hidden;
-}
-.monosashi:hover {
-  opacity: 0.8;
-}
-.monosashi:hover .monosashi_circle {
-  opacity: 1;
-  visibility: visible;
+  top: 65%;
+  right: 5%;
+  display: none;
 }
 
 /* 長方形ツール */
 
 .tyouhoukei {
-  position: relative;
   cursor: pointer;
 }
 .tyouhoukei_circle {
-  width: 2rem;
-  height: 2rem;
+  width: 80%;
+  height: 5%;
   border: solid 4px #ff0000;
   border-radius: 50%;
   position: absolute;
-  top: 10px;
-  right: -307px;
-  opacity: 0;
-  visibility: hidden;
-}
-.tyouhoukei:hover {
-  opacity: 0.8;
-}
-.tyouhoukei:hover .tyouhoukei_circle {
-  opacity: 1;
-  visibility: visible;
+  top: 17%;
+  right: 5%;
+  display: none;
 }
 
 /* フォントサイズ */
 
-.fontsize {
+.text_image {
+  width: 28%;
   position: relative;
-  cursor: pointer;
 }
+
 .fontsize_circle {
-  width: 8rem;
-  height: 2rem;
+  width: 40%;
+  height: 5%;
   border: solid 4px #ff0000;
   border-radius: 50%;
   position: absolute;
-  top: 195px;
-  right: -290px;
-  opacity: 0;
-  visibility: hidden;
-}
-.fontsize:hover {
-  opacity: 0.8;
-}
-.fontsize:hover .fontsize_circle {
-  opacity: 1;
-  visibility: visible;
+  top: 15%;
+  left: 5%;
+  display: none;
 }
 
 /* 行高 */
 
-.gyoudaka {
-  position: relative;
-  cursor: pointer;
-}
 .gyoudaka_circle {
-  width: 8rem;
-  height: 2rem;
+  width: 40%;
+  height: 5%;
   border: solid 4px #ff0000;
   border-radius: 50%;
   position: absolute;
-  top: 140px;
-  right: -430px;
-  opacity: 0;
-  visibility: hidden;
-}
-.gyoudaka:hover {
-  opacity: 0.8;
-}
-.gyoudaka:hover .gyoudaka_circle {
-  opacity: 1;
-  visibility: visible;
+  top: 15%;
+  right: 5%;
+  display: none;
 }
 
 /* カーニング */
 
-.va {
-  position: relative;
-  cursor: pointer;
-}
 .va_circle {
-  width: 8rem;
-  height: 2rem;
+  width: 40%;
+  height: 5%;
   border: solid 4px #ff0000;
   border-radius: 50%;
   position: absolute;
-  top: -17px;
-  right: -430px;
-  opacity: 0;
-  visibility: hidden;
-}
-.va:hover {
-  opacity: 0.8;
-}
-.va:hover .va_circle {
-  opacity: 1;
-  visibility: visible;
+  top: 50%;
+  right: 5%;
+  display: none;
 }
 
 /* トラッキング */
 
-.tracking {
-  position: relative;
-  cursor: pointer;
-}
 .tracking_circle {
-  width: 8rem;
-  height: 2rem;
+  width: 40%;
+  height: 5%;
   border: solid 4px #ff0000;
   border-radius: 50%;
   position: absolute;
-  top: -115px;
-  right: -290px;
-  opacity: 0;
-  visibility: hidden;
-}
-.tracking:hover {
-  opacity: 0.8;
-}
-.tracking:hover .tracking_circle {
-  opacity: 1;
-  visibility: visible;
+  top: 50%;
+  left: 1%;
+  display: none;
 }
 
 /* 画像の大きさ */
 
-.picsize {
+.picsize_image {
+  width: 26%;
   position: relative;
-  cursor: pointer;
 }
+
 .picsize_circle {
-  width: 8rem;
-  height: 4rem;
+  width: 40%;
+  height: 20%;
   border: solid 4px #ff0000;
   border-radius: 50%;
   position: absolute;
-  top: -17px;
-  right: -430px;
-  opacity: 0;
-  visibility: hidden;
-}
-.picsize:hover {
-  opacity: 0.8;
-}
-.picsize:hover .picsize_circle {
-  opacity: 1;
-  visibility: visible;
+  top: 4%;
+  right: 6%;
+  display: none;
 }
 
 /* 角丸 */
 
-.radius {
-  position: relative;
-  cursor: pointer;
-}
 .radius_circle {
-  width: 16rem;
-  height: 6rem;
+  width: 80%;
+  height: 25%;
   border: solid 4px #ff0000;
   border-radius: 50%;
   position: absolute;
-  top: 0;
-  right: -430px;
-  opacity: 0;
-  visibility: hidden;
-}
-.radius:hover {
-  opacity: 0.8;
-}
-.radius:hover .radius_circle {
-  opacity: 1;
-  visibility: visible;
+  top: 55%;
+  left: 6%;
+  display: none;
 }
 
+.visible {
+  display: block;
+}
 @media screen and (max-width: 767px) {
   .heading {
     display: block;

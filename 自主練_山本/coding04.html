@@ -33,10 +33,9 @@
             <h3>余白</h3>
             <div class="container">
                 <div>
-                    <div class="monosashi">
-                        <h4>ものさしツール</h4>
+                    <div>
+                        <h4 class="monosashi">ものさしツール</h4>
                         <p>『Shift』キーを押しながら、縦横のおおよその長さを測る。</p>
-                        <div class="monosashi_circle"></div>
                     </div>
                     <div class="tyouhoukei">
                         <h4>長方形ツール</h4>
@@ -44,45 +43,48 @@
                         <p>※ シェイプの置き忘れに注意！<br>
                             別の人が同じファイルを開いたときに、要素としてコーディングしてしまうかも。<br>
                             目立つ派手な色をつける、ファイルを保存せずに閉じるなどの対策を。</p>
-                        <div class="tyouhoukei_circle"></div>
                     </div>
                 </div>
-                <img src="./images/toolbar.png">
+                <div class="toolbar_image">
+                    <img src="./images/toolbar.png">
+                    <div class="monosashi_circle"></div>
+                    <div class="tyouhoukei_circle"></div>
+                </div>
             </div>
         </section>
         <section>
             <h3>文字</h3>
             <div class="container">
                 <div>
-                    <div class="heading fontsize">
-                        <h4>フォントサイズ</h4>
+                    <div class="heading">
+                        <h4 calss="fontsize">フォントサイズ</h4>
                         <code>font-size</code>
-                        <div class="fontsize_circle"></div>
                     </div>
-                    <div class="heading gyoudaka">
-                        <h4>行高</h4>
+                    <div class="heading">
+                        <h4 class="gyoudaka">行高</h4>
                         <code>line-height</code>
-                        <div class="gyoudaka_circle"></div>
                     </div>
                     <p><span>行高 / フォントサイズ</span>で設定する</p>
                     <p>固定値で設定すると、<br>
                         フォントサイズを調整するときに余白が崩れてしまう。<br>
                         必ず倍率で指定すること。</p>
-                    <div class="heading va">
-                        <h4>文字の間隔（カーニング）</h4>
+                    <div class="heading">
+                        <h4 class="va">文字の間隔（カーニング）</h4>
                         <code>letter-spacing</code>
-                        <div class="va_circle"></div>
                     </div>
                     <p><span>VA値 / 1000 em</span>で設定する</p>
-                    <div class="heading tracking">
-                        <h4 class="item">トラッキング</h4>
+                    <div class="heading">
+                        <h4 class="tracking">トラッキング</h4>
                         <code>font-feature-setting</code>
-                        <div class="tracking_circle"></div>
                     </div>
                     <p>「メトリクス」や「オプティカル」のときは<span>"palt"</span>に設定する</p>
                 </div>
-                <div class="image">
+                <div class="text_image">
                     <img src="./images/text.png">
+                    <div class="fontsize_circle"></div>
+                    <div class="gyoudaka_circle"></div>
+                    <div class="va_circle"></div>
+                    <div class="tracking_circle"></div>
                 </div>
             </div>
         </section>
@@ -107,23 +109,23 @@
             <h3>画像</h3>
             <div class="container">
                 <div>
-                    <div class="heading picsize">
-                        <h4>大きさ</h4>
+                    <div class="heading">
+                        <h4 class="picsize">大きさ</h4>
                         <code>width , height</code>
-                        <div class="picsize_circle"></div>
                     </div>
                     <p>コーディングの際は、widthかheightのどちらかを設定する。<br>
                         元の画像と比率が変わった際に、見た目が崩れてしまうため。</p>
-                    <div class="heading radius">
-                        <h4>角丸</h4>
+                    <div class="heading">
+                        <h4 class="radius">角丸</h4>
                         <code>border-radius</code>
-                        <div class="radius_circle"></div>
                     </div>
                     <p><span>50%</span>に指定すると、四角い画像を丸く切り取ることができる。<br>
                         指定した角のみ丸くすることもできる</p>
                 </div>
-                <div class="image">
+                <div class="picsize_image">
                     <img src="./images/shapes.png">
+                    <div class="picsize_circle"></div>
+                    <div class="radius_circle"></div>
                 </div>
             </div>
             <div class="explain">
@@ -211,6 +213,19 @@
             → 「box-sizing:border-box;」ボーダーまで含めて要素の大きさであることを設定する。</p>
     </section>
     <a href="index.html" class="btn"><img src="./images/home.png"></a>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/script.js">
+        $(function () {
+            $('.monosashi').hover(
+                function () {
+                    $('.monosashi_circle').addClass('visible')
+                },
+                function () {
+                    $('.monosashi_circle').removeClass('visible')
+                }
+            )
+        })
+    </script>
 </body>
 
 </html>
