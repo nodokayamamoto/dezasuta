@@ -57,7 +57,7 @@
             <div class="container">
                 <div>
                     <div class="heading">
-                        <h4 calss="fontsize">フォントサイズ</h4>
+                        <h4 class="fontsize">フォントサイズ</h4>
                         <code>font-size</code>
                     </div>
                     <div class="heading">
@@ -214,7 +214,7 @@
     </section>
     <a href="index.html" class="btn"><img src="./images/home.png"></a>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="./js/script.js">
+    <script>
         $(function () {
             $('.monosashi').hover(
                 function () {
@@ -222,6 +222,76 @@
                 },
                 function () {
                     $('.monosashi_circle').removeClass('visible')
+                }
+            )
+        })
+        $(function () {
+            $('.tyouhoukei').hover(
+                function () {
+                    $('.tyouhoukei_circle').addClass('visible')
+                },
+                function () {
+                    $('.tyouhoukei_circle').removeClass('visible')
+                }
+            )
+        })
+        $(function () {
+            $('.fontsize').hover(
+                function () {
+                    $('.fontsize_circle').addClass('visible')
+                },
+                function () {
+                    $('.fontsize_circle').removeClass('visible')
+                }
+            )
+        })
+        $(function () {
+            $('.gyoudaka').hover(
+                function () {
+                    $('.gyoudaka_circle').addClass('visible')
+                },
+                function () {
+                    $('.gyoudaka_circle').removeClass('visible')
+                }
+            )
+        })
+        $(function () {
+            $('.va').hover(
+                function () {
+                    $('.va_circle').addClass('visible')
+                },
+                function () {
+                    $('.va_circle').removeClass('visible')
+                }
+            )
+        })
+        $(function () {
+            $('.tracking').hover(
+                function () {
+                    $('.tracking_circle').addClass('visible')
+                },
+                function () {
+                    $('.tracking_circle').removeClass('visible')
+                }
+            )
+        })
+        $(function () {
+            $('.picsize').hover(
+                function () {
+                    $('.picsize_circle').addClass('visible')
+                },
+                function () {
+                    $('.picsize_circle').removeClass('visible')
+                }
+            )
+        })
+        $(function () {
+            $('.radius').hover(
+                function () {
+                    $('.radius_circle').addClass('visible')
+                },
+                function () {
+                    $('.radius_circle').removeClass('visible')
                 }
             )
         })
