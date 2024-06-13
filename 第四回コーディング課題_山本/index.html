@@ -7,13 +7,17 @@
     <title>Design Cafe</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
     <header id="header">
         <div class="header_slider">
             <div>
-                <img src="./images/pc_first-100.jpg" alt="店内の様子">
+                <picture>
+                    <source srcset="images/sp_main_vs@2x-100.jpg" media="(max-width:767px)">
+                    <img src="./images/pc_first-100.jpg" alt="店内の様子">
+                </picture>
             </div>
         </div>
         <div class="header_wrap">
@@ -29,6 +33,18 @@
                     <li><a href="#access">ACCESS</a></li>
                 </ul>
             </nav>
+            <div class="sp_btn">
+                <span></span>
+            </div>
+            <nav class="sp_nav">
+                <ul>
+                    <li><a href="#about">ABOUT US</a></li>
+                    <li><a href="#menu">MENU</a></li>
+                    <li><a href="#gallery">GALLERY</a></li>
+                    <li><a href="#event">EVENT</a></li>
+                    <li><a href="#access">ACCESS</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
     <main>
@@ -36,17 +52,18 @@
             <p>Have a happy day From a cup of coffee.</p>
             <p>ハッピーに溢れる1日を<br>
                 1杯のコーヒーから。</p>
-            <p>毎日を丁寧に大切に過ごしたい。だからこそ一杯一杯丁寧にコーヒーを入れ<br>
+            <p>毎日を丁寧に大切に過ごしたい。<br class="hidden_pc">だからこそ一杯一杯丁寧にコーヒーを入れ<br>
                 足を運んでくれるお客さんには落ち着く空間とこだわりのコーヒーを提供したい。</p>
         </div>
         <section id="about" class="contents">
-            <h2 class="about_pic">
+            <div class="about_pic">
                 <img src="./images/pc_about-100.jpg" alt="コーヒーで乾杯">
-            </h2>
+            </div>
             <div class="about_contents">
-                <div class="about_icon icon">
-                    <img src="./images/about_us@2x.png" alt="ABOUT US">
-                </div>
+                <h2 class="about_icon icon">
+                    <img src="./images/about_us@2x.png" alt="ABOUT US" class="about_pc">
+                </h2>
+                <img src="./images/about_us@2x-100.jpg" alt="コーヒーで乾杯" class="about_sp">
                 <p class="about_copy">私たちが提供する<br>
                     こだわりのコーヒー</p>
                 <p class="about_text">
@@ -61,21 +78,30 @@
             <div class="menu_container">
                 <div class="menu_contents">
                     <div class="menu_image">
-                        <img src="./images/drink_sp@2x-100.jpg " alt="アイスコーヒー">
+                        <picture>
+                            <source srcset="images/drink_sp@2x-100.jpg" media="(max-width:767px)">
+                            <img src="./images/drink_sp@2x-100.jpg " alt="アイスコーヒー">
+                        </picture>
                         <p>Drink</p>
                     </div>
                     <p class="menu_explain">ドリンクメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
                 </div>
                 <div class="menu_contents">
                     <div class="menu_image">
-                        <img src="./images/food_sp@2x-100.jpg" alt="パスタ">
+                        <picture>
+                            <source srcset="images/food_sp@2x-100.jpg" media="(max-width:767px)">
+                            <img src="./images/food_sp@2x-100.jpg" alt="パスタ">
+                        </picture>
                         <p>Food</p>
                     </div>
                     <p class="menu_explain">フードメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
                 </div>
                 <div class="menu_contents">
                     <div class="menu_image">
-                        <img src="./images/cake_sp@2x-100.jpg" alt="ケーキ">
+                        <picture>
+                            <source srcset="images/cake_sp@2x-100.jpg" media="(max-width:767px)">
+                            <img src="./images/cake_sp@2x-100.jpg" alt="ケーキ">
+                        </picture>
                         <p>Sweets</p>
                     </div>
                     <p class="menu_explain">スイーツメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
@@ -119,10 +145,11 @@
             <h2 class="access_icon icon">
                 <img src="./images/access@2x.png" alt="ACCESS">
             </h2>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.8278537072515!2d139.7645498729636!3d35.681240529978226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1717167497735!5m2!1sja!2sjp"
-                style="border:0; margin-right: calc(50% - 50vw); margin-left: calc(50% - 50vw); max-width: none; width: 100vw; height:475px;"
-                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="iframe_wrap">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.8278537072515!2d139.7645498729636!3d35.681240529978226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1717167497735!5m2!1sja!2sjp"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </section>
     </main>
     <footer id="footer">
@@ -144,6 +171,15 @@
     <div class="to_top">
         <a href="#header"><img src="./images/to_top@2x.png"></a>
     </div>
+
+    <script>
+        $(function () {
+            $('.sp_btn').on('click', function () {
+                $('.sp_nav').fadeToggle();
+                $('.sp_btn').toggleClass('open');
+            })
+        })
+    </script>
 </body>
 
 </html>
