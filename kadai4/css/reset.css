@@ -27,7 +27,7 @@ button {
   font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
     "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
   font-size: 16px;
-  font-weight: medium;
+  font-weight: 400;
   letter-spacing: 0.0175em;
   font-feature-settings: "palt";
 }

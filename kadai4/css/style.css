@@ -38,7 +38,7 @@
 .pc_nav ul {
   display: flex;
   align-items: center;
-  gap: 50px;
+  gap: 3vw;
 }
 
 .pc_nav ul li {
@@ -47,7 +47,7 @@
 }
 
 .visit {
-  width: 200px;
+  width: 13vw;
   height: 46px;
   color: #ffffff;
   font-weight: bold;
@@ -91,7 +91,7 @@
   box-sizing: border-box;
   position: relative;
 }
-.about_top p:first-child {
+.about_top h2 {
   font-size: 56px;
   line-height: 1.64;
   font-weight: bold;
@@ -394,7 +394,26 @@
   text-align: center;
   padding-bottom: 45px;
 }
+@media screen and (max-width: 950px) {
+  .pc_nav ul {
+    gap: 2vw;
+  }
 
+  .pc_nav ul li {
+    font-size: 14px;
+  }
+
+  .visit {
+    font-size: 13px;
+  }
+
+  .footer_menu {
+    gap: 2vw;
+  }
+  .footer_menu li {
+    font-size: 12px;
+  }
+}
 @media screen and (max-width: 767px) {
   /* 画面幅 */
 
@@ -504,7 +523,7 @@
     max-width: 767px;
     padding: 75px 10px 25px 10px;
   }
-  .about_top p:first-child {
+  .about_top h2 {
     font-size: 31px;
     line-height: 1.6;
     letter-spacing: 0.075em;
@@ -543,7 +562,7 @@
   /* detail */
 
   .detail_flex {
-    max-width: 767x;
+    max-width: 767px;
     padding: 60px 10px 0 10px;
     margin: 0 auto;
     display: flex;
@@ -734,7 +753,7 @@
   .service_box p:last-child {
     font-size: 14px;
     line-height: 2;
-    font-weight: middle;
+    font-weight: 400;
     text-align: center;
   }
   /* footer */

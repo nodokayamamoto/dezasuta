@@ -414,7 +414,7 @@ footer {
   }
   #about {
     display: block;
-    gap: none;
+    gap: 0;
   }
   .about_contents {
     width: 100%;
