@@ -94,6 +94,17 @@ header {
   line-height: 1.65;
 }
 
+/* header slider */
+
+.slick-dots {
+  bottom: 20px;
+}
+
+.slick-dots li button:before,
+.slick-dots li.slick-active button:before {
+  color: #fff;
+}
+
 /* about */
 
 .about_sp {
@@ -164,10 +175,53 @@ header {
 }
 .gallery_slider {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100vw;
   margin: 0 calc(50% - 50vw);
 }
-.gallery_slider img {
-  width: 20%;
+
+.gallery_photo {
+  width: 100%;
+}
+
+.slick-prev {
+  left: 25%;
+  z-index: 10;
+}
+
+.slick-next {
+  right: 25%;
+}
+
+.slick-prev:before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-top: 3px solid #fff;
+  border-left: 3px solid #fff;
+  transform: rotate(-45deg);
+  opacity: 1;
+}
+.slick-next:before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-top: 3px solid #fff;
+  border-right: 3px solid #fff;
+  transform: rotate(45deg);
+  opacity: 1;
+}
+
+.slick-next:hover,
+.slick-prev:hover {
+  opacity: 0.75;
+}
+
+.lb-data .lb-number {
+  display: none !important;
 }
 
 /* event */
@@ -459,6 +513,57 @@ footer {
     font-size: 17px;
     line-height: 1.6;
     margin-bottom: 60px;
+  }
+
+  /* gallery */
+
+  .gallery_icon {
+    margin-bottom: 20px;
+  }
+
+  .gallery_slider {
+    max-width: 767px;
+    display: flex;
+    margin: 0 calc(50% - 50vw);
+  }
+
+  .gallery_photo {
+    width: 100%;
+  }
+
+  .slick-prev {
+    left: 25%;
+    z-index: 10;
+  }
+
+  .slick-next {
+    right: 25%;
+  }
+
+  .slick-prev:before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-top: 3px solid #fff;
+    border-left: 3px solid #fff;
+    transform: rotate(-45deg);
+    opacity: 1;
+  }
+  .slick-next:before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-top: 3px solid #fff;
+    border-right: 3px solid #fff;
+    transform: rotate(45deg);
+    opacity: 1;
+  }
+
+  .slick-next:hover,
+  .slick-prev:hover {
+    opacity: 0.75;
   }
 
   /* event */
