@@ -523,47 +523,14 @@ footer {
 
   .gallery_slider {
     max-width: 767px;
-    display: flex;
-    margin: 0 calc(50% - 50vw);
-  }
-
-  .gallery_photo {
-    width: 100%;
   }
 
   .slick-prev {
-    left: 25%;
-    z-index: 10;
+    left: 8%;
   }
 
   .slick-next {
-    right: 25%;
-  }
-
-  .slick-prev:before {
-    content: "";
-    display: block;
-    width: 20px;
-    height: 20px;
-    border-top: 3px solid #fff;
-    border-left: 3px solid #fff;
-    transform: rotate(-45deg);
-    opacity: 1;
-  }
-  .slick-next:before {
-    content: "";
-    display: block;
-    width: 20px;
-    height: 20px;
-    border-top: 3px solid #fff;
-    border-right: 3px solid #fff;
-    transform: rotate(45deg);
-    opacity: 1;
-  }
-
-  .slick-next:hover,
-  .slick-prev:hover {
-    opacity: 0.75;
+    right: 8%;
   }
 
   /* event */
