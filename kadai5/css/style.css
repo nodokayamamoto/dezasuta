@@ -874,6 +874,7 @@ iframe {
 
   .sp_headermail {
     background-color: #333;
+    border: none;
     width: 70px;
     height: 60px;
     text-align: center;
@@ -1478,7 +1479,7 @@ iframe {
   .reserve_spbtn {
     max-width: 100vw;
     margin: 0 auto;
-    height: 40px;
+    height: 60px;
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -1489,18 +1490,22 @@ iframe {
 
   .reserve_spbtn button {
     width: 50vw;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1vw;
     background-color: #b67d80;
     border: none;
-  }
-  .reserve_spbtn button {
     border-top: 1px solid #fff;
   }
   .reserve_spbtn button:first-child {
     border-right: 1px solid #fff;
+  }
+
+  button:hover {
+    background-color: #8f8f8f;
+    cursor: pointer;
   }
 
   .iconbox {

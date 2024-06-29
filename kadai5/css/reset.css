@@ -52,7 +52,11 @@ a {
   transition: 0.3s;
 }
 
-button:hover,
+button:hover {
+  background-color: #8f8f8f;
+  cursor: pointer;
+}
+
 a:hover {
   opacity: 0.5;
   cursor: pointer;
