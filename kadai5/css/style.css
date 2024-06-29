@@ -1474,12 +1474,13 @@ iframe {
   /* 固定予約ボタン */
 
   .reserve_spbtn {
-    width: 100%;
+    max-width: 767px;
+    margin: 0 auto;
     height: 40px;
     display: flex;
     justify-content: space-between;
     position: fixed;
-    right: 0;
+    left: 0;
     bottom: 0;
     z-index: 10;
   }
