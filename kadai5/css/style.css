@@ -1047,8 +1047,9 @@ iframe {
     white-space: nowrap;
     transform: rotate(-90deg);
     position: absolute;
-    top: 0%;
-    right: 50%;
+    top: auto;
+    bottom: 70%;
+    right: 60%;
     left: auto;
     z-index: 2;
   }
@@ -1056,7 +1057,8 @@ iframe {
   .concept1 img {
     position: absolute;
     width: 80%;
-    top: 0;
+    top: auto;
+    bottom: 0;
     left: auto;
     right: -20px;
     z-index: 1;

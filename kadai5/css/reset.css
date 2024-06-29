@@ -3,10 +3,11 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
-html,
 body {
+  position: relative;
   overflow-x: hidden;
 }
 
